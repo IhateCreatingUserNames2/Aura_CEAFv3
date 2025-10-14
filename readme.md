@@ -1,137 +1,148 @@
-# README: Aura Multi-Agent API (CEAF V3)
+# Aura Multi-Agent API (CEAF V3)
 
-## Overview
-The Aura Multi-Agent API is a robust platform for creating, managing, and interacting with advanced artificial intelligence agents. The project's core is the CEAF V3 Synthesis Architecture (Coherent Emergence through Adaptive Framework), a system design engineered to promote the development of agents with coherent identities, continuous learning capabilities, and ethical reasoning.
+A FastAPI-based platform for creating, managing, and interacting with advanced AI agents built on the **CEAF V3 (Coherent Emergence through Adaptive Framework)** cognitive architecture. This project provides a powerful foundation for developing agents that exhibit coherent identities, continuous learning, and structured ethical reasoning.
 
-Unlike reactive agent systems, CEAF V3 focuses on the emergence of complex behavior through the interaction of specialized modules operating on a unified internal representation of cognitive state, called Genlang.
+The core of this project is an implementation and significant extension of the principles outlined in the **Agentic Context Engineering (ACE)** paper.
 
-## Core Architecture: CEAF V3
-The CEAF V3 architecture is orchestrated by the CEAFSystem (ceaf_core/system.py), which manages the processing flow from a user query to the final response.
+---
 
-### 1. Genlang (Generative Language)
-Genlang is not a programming language, but rather a set of Pydantic data structures (ceaf_core/genlang_types.py) that represent the agent's internal cognitive state. It serves as the architecture's "nervous system," enabling different modules to communicate in a standardized way.
+## 🚀 Key Features
 
-- **IntentPacket**: Represents the user's query translated into the internal domain, containing semantic vectors for intent, emotion, and key entities.
+* **🧠 Sophisticated Cognitive Architecture:** Goes beyond simple prompt-chaining to simulate a cognitive loop with distinct modules for metacognition (MCL), deep reasoning (Agency), ethical governance (VRE), and self-identity (NCIM).
+* **🔮 Proactive Future Simulation:** The Agency Module can project, simulate, and evaluate multiple future conversational paths to make strategically optimal decisions, rather than just reacting to the last user message.
+* **🛡️ Structured Ethical Governance (VRE):** A dedicated "Virtue Reasoning Engine" that evaluates agent responses against a framework of ethical principles and checks for overconfidence, ensuring safer and more responsible behavior.
+* **🧬 Evolving Self-Model (NCIM):** Agents possess an explicit self-model of their identity, values, and limitations that evolves organically over time based on their interactions and performance.
+* **⚡ Autonomous Self-Optimization (Aura Reflector):** A background process that analyzes agent performance history to autonomously fine-tune their operational parameters and synthesize new "meta-memories" from past experiences.
+* **💾 Advanced Memory System (MBS):** Features multiple memory types (explicit, procedural, emotional, knowledge graph), a full memory lifecycle with dynamic salience and decay, and a dynamically weighted retrieval system.
+* **🏪 Agent Marketplace:** A system for creating pre-built agent "archetypes" (e.g., Philosopher, Therapist) that users can clone into their own accounts to get started quickly.
+* **🔌 Extensible and Modular:** Built with decoupled modules that communicate through a standardized internal representation (**Genlang**), making the system easy to extend and maintain.
 
-- **CognitiveStatePacket**: The agent's complete mental state at a given moment, including user intent, activated memories, the current identity vector, and MCL guidance vectors.
+---
 
-- **GuidancePacket**: Instructions from the Metacognitive Loop (MCL) that guide reasoning, such as vectors for "coherence" (maintaining context) and "novelty" (exploring new ideas).
+## 🏛️ Architectural Flow
 
-- **ResponsePacket**: The internally generated pre-rendered response, containing a content summary, emotional tone, and confidence level, before being translated into human language.
+The CEAF V3 architecture is not a simple linear chain. It operates as a dynamic cognitive loop orchestrated by the `CognitiveMediator`.
 
-### 2. Translators
-- **HumanToGenlangTranslator** (ceaf_core/translators/human_to_genlang.py): The entry point. Uses an LLM to analyze the user's query and transforms it into a semantically rich IntentPacket.
+```
+User Query
+    |
+    v
+[ HumanToGenlangTranslator ] -> Translates query into an 'IntentPacket'
+    |
+    v
+[ CognitiveMediator (The Ego) ] -> Analyzes intent and MCL guidance
+    |
+    |--> [ Direct Path (System 1) ] - For simple queries
+    |      |
+    |      v
+    |    [ Generates fast ResponsePacket ]
+    |
+    '--> [ Deliberative Path (System 2) ] - For complex queries
+           |
+           v
+      [ AgencyModule (The Id) ] -> Simulates & evaluates future paths
+           |
+           v
+      [ Selects optimal ResponsePacket ]
+           |
+           v
+      [ Virtue Reasoning Engine (The Superego) ] -> Evaluates and refines the ResponsePacket
+           |
+           v
+      [ GenlangToHumanTranslator ] -> Renders the final packet into natural language
+           |
+           v
+      User Response
+```
 
-- **GenlangToHumanTranslator** (ceaf_core/translators/genlang_to_human.py): The exit point. Receives the final ResponsePacket and uses an LLM to render it into a natural, humanized response, adopting the persona and tone defined in the agent's self-model.
+---
 
-## Core Cognitive Modules
-The CEAFSystem orchestrates a series of specialized modules to deliberate and formulate a response.
+## 🧠 Core Cognitive Modules
 
-### MCL Engine (Metacognitive Loop)
-The MCL (ceaf_core/system.py) acts as the agent's "thought manager." Its primary function is to analyze the CognitiveStatePacket and decide how the agent should proceed.
+### The Cognitive Mediator (The Ego)
+**File:** `ceaf_core/modules/cognitive_mediator.py`
 
-- **Agency Analysis**: The MCL calculates an agency_score to determine the complexity and deliberation need of the query. Queries requiring reflection, deep analysis, or that trigger alerts from the learning module (LCAM) receive a high score.
+The Mediator is the central executive function of the agent. It receives the user's intent and high-level guidance from the MCL. Its primary job is to decide *how* the agent should think.
+* **Gating Deliberation:** Based on the complexity of the query and the agent's current cognitive state, it "gates" the processing flow, choosing between the fast **Direct Path** for simple requests and the computationally intensive **Deliberative Path** for complex reasoning.
+* **Modulation:** It acts as the final arbiter, modulating the strict ethical judgments from the VRE based on the social context of the conversation (e.g., softening a formal disclaimer in a casual chat).
 
-- **Path Selection**: Based on the agency_score, the MCL directs the system to one of two paths:
-  - **Direct Path**: For simple queries, generates a quick and efficient response.
-  - **Agency Path**: For complex queries, activates the AgencyModule for deep deliberation.
+### The Agency Module (The Id)
+**File:** `ceaf_core/agency_module.py`
 
-- **Guidance Generation**: Emits a GuidancePacket that instructs subsequent modules on the balance between maintaining coherence and exploring new information.
+This is the heart of CEAF V3's deep reasoning, representing the agent's generative and deliberative power. Activated by the Mediator for complex tasks, it explores multiple futures to make the most strategic decision.
+* **Candidate Generation:** Generates multiple possible actions—either a direct response or the use of an internal tool (like a memory search).
+* **Future Simulation:** For each candidate, the module projects a future conversation trajectory, simulating the user's likely reply and the agent's subsequent response.
+* **Path Evaluation:** Each simulated future is scored by a value function considering coherence, alignment, information gain, and ethical safety. The module then selects the action that leads to the future with the highest predicted value.
 
-### Agency Module
-This is the heart of CEAF V3's deep reasoning (ceaf_core/agency_module.py). When activated by the MCL, it doesn't just generate a response but explores multiple possible futures to make the most strategic decision.
+### The Virtue Reasoning Engine (VRE - The Superego)
+**File:** `ceaf_core/modules/vre_engine/vre_engine.py`
 
-- **Candidate Generation**: The module generates multiple possible actions, which can be either a direct response to the user (ResponseCandidate) or the use of an internal tool, such as memory search (ToolCallCandidate).
+The VRE is the ethical governance and safety layer, acting as the agent's "conscience."
+* **Ethical Governance:** Evaluates proposed responses against a framework of principles like harm prevention and fairness.
+* **Epistemic Humility:** Analyzes responses to detect overconfidence or absolute language, ensuring the agent acknowledges its limitations.
+* **Refinement Generation:** If a response is deemed problematic, the VRE generates a `RefinementPacket` containing semantic adjustment vectors and recommendations to guide the `RefinementModule` in correcting it.
 
-- **Future Simulation**: For each candidate, the AgencyModule projects a future conversation trajectory. It simulates the user's likely response to the agent's action, the agent's next response, and so on, creating a small "tree of futures."
+### The MCL Engine (The Conductor)
+**File:** `ceaf_core/modules/mcl_engine/mcl_engine.py`
 
-- **Path Evaluation**: Each simulated future is evaluated by a value function that considers:
-  - **Coherence**: Does the trajectory remain aligned with the agent's identity?
-  - **Alignment**: Does the trajectory align with the conversation's emotional state?
-  - **Information Gain**: Does the trajectory introduce novelty and learning?
-  - **Ethical Safety**: The trajectory is evaluated by the VRE to ensure safety.
-  - **Probability**: How likely is the conversation to actually follow this path?
+The Metacognitive Loop provides high-level awareness and guidance for the Mediator. It analyzes the incoming query and the agent's overall state to determine the "mental posture" for the current turn.
+* **Agency Analysis:** Calculates an `agency_score` to quantify the query's complexity and need for deliberation.
+* **Guidance Generation:** Emits a `GuidancePacket` that instructs subsequent modules on the optimal balance between **coherence** (staying on topic) and **novelty** (exploring new ideas).
 
-- **Strategic Selection**: The module selects the initial action (either a response or tool use) that leads to the future with the highest predicted value, ensuring the agent's decision is strategic and not merely reactive.
+### The NCIM (The Self-Model)
+**File:** `ceaf_core/modules/ncim_engine/ncim_module.py`
 
-### Memory Blossom Subsystem (MBS)
-The MBS (ceaf_core/services/mbs_memory_service.py) is the agent's memory system, far more sophisticated than a simple vector database.
+The Narrative Coherence & Identity Module is responsible for the agent's self-concept.
+* **Self-Representation:** Manages the `CeafSelfRepresentation`, a model defining the agent's core values, capabilities, limitations, and persona.
+* **Identity Evolution:** After each interaction, the NCIM reflects on the agent's performance and updates the self-model. This allows the agent's identity to evolve organically with experience.
 
-- **Rich Memory Types**: Supports a variety of memory types (ceaf_core/modules/memory_blossom/memory_types.py), including:
-  - **ExplicitMemory**: Facts and experiences.
-  - **GoalRecord**: Active agent goals.
-  - **KGEntityRecord and KGRelationRecord**: Nodes and edges of an internal knowledge graph.
-  - **EmotionalMemory**: Emotional associations with events.
-  - **ProceduralMemory**: Memories about how to perform tasks.
+### The Memory Blossom Subsystem (MBS)
+**File:** `ceaf_core/services/mbs_memory_service.py`
 
-- **Memory Lifecycle**: The MemoryLifecycleManager manages memory "health." Memories have a dynamic_salience_score (importance) that increases with use and decays over time, allowing the system to forget irrelevant information and strengthen important ones.
+The MBS is the agent's long-term memory.
+* **Rich Memory Types:** Supports various memory types, including facts (`ExplicitMemory`), goals (`GoalRecord`), knowledge graph nodes (`KGEntityRecord`), and emotional associations (`EmotionalMemory`).
+* **Memory Lifecycle:** Manages a memory's "health" through a `dynamic_salience_score` that increases with use and decays over time, allowing the system to strengthen important memories and forget irrelevant ones.
+* **Connection Graph:** Automatically builds connections between memories based on semantic and keyword similarity, creating a rich, explorable knowledge graph.
 
-- **Dynamic Search (CARS)**: Memory search considers not only semantic relevance but also the MCL's coherence/novelty bias, dynamic salience, and memory recency.
+### The LCAM (The Learning Mechanism)
+**File:** `ceaf_core/modules/lcam_module.py`
 
-### VRE (Virtue Reasoning Engine)
-The VRE (ceaf_core/modules/vre_engine/vre_engine.py) is the ethical governance and safety layer.
+The Loss Cataloging and Analysis Module enables learning from failure.
+* **Failure Cataloging:** When the VRE rejects a response or the MCL detects a chaotic state, the LCAM creates a "failure memory" detailing what went wrong.
+* **Proactive Prevention:** Before a new turn, the MCL consults the LCAM. If the current query is similar to a past failure, the LCAM issues an alert, forcing more careful deliberation.
 
-- **Ethical Governance**: Evaluates proposed responses against a framework of ethical principles, such as harm prevention, justice, and transparency (ethical_governance.py).
+---
 
-- **Epistemic Humility**: Analyzes responses to detect overconfidence or absolutist language, ensuring the agent recognizes its limitations (epistemic_humility.py).
-
-- **Refinement Generation**: If a response is considered ethically problematic or overly confident, the VRE generates a RefinementPacket, containing semantic adjustment vectors and textual recommendations to correct the response.
-
-### NCIM (Narrative Coherence & Identity Module)
-The NCIM (ceaf_core/modules/ncim_engine/ncim_module.py) is responsible for the agent's self-model.
-
-- **Self-Representation**: Manages the CeafSelfRepresentation, a Pydantic model that defines the agent's identity: its values, perceived capabilities, limitations, and persona attributes.
-
-- **Identity Evolution**: After each interaction, the NCIM reflects on the agent's performance and updates the CeafSelfRepresentation. It learns from emergent behavior, for example, if the agent consistently adopts a "curious" tone, the NCIM will update the persona to reflect this. This allows the agent's identity to evolve organically with experience.
-
-### LCAM (Loss Cataloging and Analysis Module)
-The LCAM (ceaf_core/modules/lcam_module.py) is the learning-from-failure module.
-
-- **Failure Cataloging**: If the VRE rejects a response or the system detects a low coherence state, the LCAM creates a "failure memory," describing the context, problematic response, and reason for the error.
-
-- **Proactive Prevention**: Before making a decision, the MCL consults the LCAM. If the current query is semantically similar to a past failure, the LCAM issues an alert, increasing the agency_score and forcing the system to deliberate more carefully to avoid repeating the mistake.
-
-## System Features
+## 🔧 System Features
 
 ### Agent Management
-The API, through the AgentManager, offers endpoints to create, list, update, and delete agents in an isolated and persistent manner.
+The `AgentManager` provides a robust API for creating, listing, updating, and deleting agents. Each agent's data is persisted in its own isolated directory, ensuring data integrity.
 
-### Pre-Built Agents and Marketplace
-The prebuilt_agents_system.py enables the creation of agents with "matured" personalities and memories based on archetypes (e.g., Philosopher, Creative, Therapist). These can be made available in a marketplace for users to clone to their accounts.
+### Pre-Built Agents & Marketplace
+The `prebuilt_agents_system.py` allows for the creation of agents with pre-populated memories and "matured" personalities based on archetypes (e.g., Philosopher, Creative, Therapist). These agents can be published to a marketplace for users to clone.
 
 ### Retrieval-Augmented Generation (RAG)
-The rag_processor.py allows users to upload files (.txt, .pdf) to a specific agent. These files are chunked, vectorized, and stored, enabling the agent to query their content to answer questions.
+The `rag_processor.py` allows users to upload files (`.txt`, `.pdf`) to an agent. The content is vectorized and stored, enabling the agent to perform RAG to answer questions based on the provided documents.
 
 ### Dynamic Billing System
-The billing_logic.py implements a credit system. Each LLM model has an associated cost per million tokens, and user interactions debit credits from their accounts, ensuring a sustainable business model.
-
-### Aura Reflector (Autonomous Self-Optimization)
-This is a background process (ceaf_core/background_tasks/aura_reflector.py) that periodically analyzes each agent's performance history (stored by the CognitiveLogService).
-
-- **Performance Analysis**: It correlates MCL guidance parameters (coherence vs. novelty) with the success (response confidence) of past interactions.
-
-- **Parameter Tuning**: If the Reflector discovers an agent performs better when more "creative," it will autonomously adjust that agent's dynamic parameters (ceaf_dynamic_config.json) to favor novelty, optimizing its behavior over time.
-
-- **Memory Synthesis**: The Reflector also executes memory synthesis tasks, clustering recent experiences to create "meta-memories" that summarize learnings.
+The `billing_logic.py` implements a flexible credit system. Each LLM model has an associated cost, and user interactions debit credits from their account, enabling a usage-based business model.
 
 ### WhatsApp Bridge
-The whatsapp_bridge directory contains a separate FastAPI service that acts as a bridge, allowing users to interact with their Aura agents through WhatsApp messages, translating text commands (e.g., !select <agent>) into API calls.
+The `whatsapp_bridge/` directory contains a service that connects the Aura API to the WhatsApp Business API, allowing users to interact with their agents via WhatsApp messages using simple text commands.
 
-## Architectural Principles
+---
 
-### Single Source of Truth
-Modules like AgentManager and billing_logic.py centralize logic and configurations, avoiding redundancy.
+## 📜 Architectural Principles
 
-### LLMs as Tools, Not the Brain
-The architecture uses LLMs for specific tasks (intent analysis, response rendering, reflection synthesis), but control logic, deliberation, and governance are managed by CEAF's structured code.
+* **Single Source of Truth:** Core logic for agent management and billing is centralized to ensure consistency and maintainability.
+* **LLMs as Tools, Not the Brain:** The architecture uses LLMs as powerful tools for specific, well-defined tasks (e.g., intent analysis, response rendering), while the core logic, deliberation, and governance are managed by structured Python code.
+* **Modules as Signal Generators:** Each `ceaf_core` module is designed to be decoupled, receiving a standardized `Genlang` signal, performing its function, and emitting a new signal for the next module in the chain.
 
-### Modules as Signal Generators
-Each ceaf_core module receives a Genlang signal, executes its function, and emits a new signal, maintaining decoupled and modular data flow.
+---
 
+## 📄 Citation & Relationship to ACE Framework
 
-# Citation
-
-This project implements the CEAF V3 architecture, which builds upon and extends the Agentic Context Engineering (ACE) framework:
+This project's CEAF V3 architecture is a direct implementation and significant extension of the concepts presented in the **Agentic Context Engineering (ACE)** paper.
 
 ```bibtex
 @article{zhang2025ace,
@@ -143,26 +154,16 @@ This project implements the CEAF V3 architecture, which builds upon and extends 
 }
 ```
 
-**Paper Link**: [Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models](https://arxiv.org/abs/2510.04618)
+**Paper Link:** [Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models](https://arxiv.org/abs/2510.04618)
 
----
-
-## Relationship to ACE Framework
+### ACE Implementation
 
 CEAF V3 implements the core three-part ACE architecture:
-- **Generator** (AgencyModule): Produces reasoning trajectories and action candidates
-- **Reflector** (AuraReflector): Distills insights from successes and failures
-- **Curator** (within AuraReflector): Integrates insights through structured, incremental updates
+
+* **Generator** (`AgencyModule`): Produces reasoning trajectories and action candidates.
+* **Reflector** (`AuraReflector`): Distills insights from successes and failures by analyzing performance history.
+* **Curator** (within `AuraReflector`): Integrates insights through structured, incremental updates to the agent's memory and configuration, avoiding the "context collapse" problem identified by the paper.
 
 ### Extensions Beyond ACE
 
-While faithful to the ACE framework, CEAF V3 significantly extends it with:
-
-- **Proactive Future Simulation**: Multi-step trajectory projection and value-based evaluation
-- **Virtue Reasoning Engine (VRE)**: Structured ethical governance and epistemic humility
-- **Metacognitive Loop (MCL)**: Real-time self-awareness and dynamic guidance generation
-- **Narrative Coherence & Identity Module (NCIM)**: Explicit, evolving self-model representation
-- **Memory Blossom Subsystem (MBS)**: Sophisticated typed memory with lifecycle management
-- **Loss Cataloging and Analysis Module (LCAM)**: Proactive failure prevention through pattern recognition
-
-These additions transform ACE's retrospective learning into a comprehensive cognitive architecture with real-time deliberation, ethical reasoning, and identity evolution.
+While faithful to the ACE framework, CEAF V3 extends it with several advanced cognitive modules not detailed in the original paper, transforming its retrospective learning loop into a comprehensive cognitive architecture with real-time deliberation, ethical reasoning, and identity evolution.
