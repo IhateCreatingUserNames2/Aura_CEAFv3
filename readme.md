@@ -127,3 +127,42 @@ The architecture uses LLMs for specific tasks (intent analysis, response renderi
 
 ### Modules as Signal Generators
 Each ceaf_core module receives a Genlang signal, executes its function, and emits a new signal, maintaining decoupled and modular data flow.
+
+
+# Citation
+
+This project implements the CEAF V3 architecture, which builds upon and extends the Agentic Context Engineering (ACE) framework:
+
+```bibtex
+@article{zhang2025ace,
+  title={Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models},
+  author={Zhang, Qizheng and Hu, Changran and Upasani, Shubhangi and Ma, Boyuan and Hong, Fenglu and Kamanuru, Vamsidhar and Rainton, Jay and Wu, Chen and Ji, Mengmeng and Li, Hanchen and Thakker, Urmish and Zou, James and Olukotun, Kunle},
+  journal={arXiv preprint arXiv:2510.04618},
+  year={2025},
+  url={https://arxiv.org/abs/2510.04618}
+}
+```
+
+**Paper Link**: [Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models](https://arxiv.org/abs/2510.04618)
+
+---
+
+## Relationship to ACE Framework
+
+CEAF V3 implements the core three-part ACE architecture:
+- **Generator** (AgencyModule): Produces reasoning trajectories and action candidates
+- **Reflector** (AuraReflector): Distills insights from successes and failures
+- **Curator** (within AuraReflector): Integrates insights through structured, incremental updates
+
+### Extensions Beyond ACE
+
+While faithful to the ACE framework, CEAF V3 significantly extends it with:
+
+- **Proactive Future Simulation**: Multi-step trajectory projection and value-based evaluation
+- **Virtue Reasoning Engine (VRE)**: Structured ethical governance and epistemic humility
+- **Metacognitive Loop (MCL)**: Real-time self-awareness and dynamic guidance generation
+- **Narrative Coherence & Identity Module (NCIM)**: Explicit, evolving self-model representation
+- **Memory Blossom Subsystem (MBS)**: Sophisticated typed memory with lifecycle management
+- **Loss Cataloging and Analysis Module (LCAM)**: Proactive failure prevention through pattern recognition
+
+These additions transform ACE's retrospective learning into a comprehensive cognitive architecture with real-time deliberation, ethical reasoning, and identity evolution.
