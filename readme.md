@@ -4,6 +4,9 @@ A FastAPI-based platform for creating, managing, and interacting with advanced A
 
 The core of this project is an implementation and significant extension of the principles outlined in the **Agentic Context Engineering (ACE)** paper.
 
+Current State:
+<img width="732" height="338" alt="image" src="https://github.com/user-attachments/assets/17f4063a-f198-4dc9-baa6-af52a85de012" />
+
 Code Is still not Ready to be Release, for now , if you are interested on this project, you can nagivate thru AuraCEAFv2 in https://github.com/IhateCreatingUserNames2/Aura_AI_Agents 
 ---
 
