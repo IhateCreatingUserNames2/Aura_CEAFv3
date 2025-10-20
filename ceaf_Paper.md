@@ -183,9 +183,9 @@ This section presents direct evidence from CEAF's operational logs, captured dur
 
 **Log Excerpt**:
 ```
-WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
-WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
-CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+WARNING:MCLEngine:MCL Drives: Curiosity Effect=-0.20, Consistency Effect=0.00
+WARNING:MCLEngine:MCL Drives: Post-Drive Biases -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: FINAL Biases (Normalized) -> Coherence=0.95, Novelty=0.05
 ```
 
 **Analysis**: After several turns exploring a complex topic, the internal "Curiosity" drive shows a negative effect (-0.20), indicating satiation. In direct response, the MCL autonomously shifts cognitive bias, suppressing novelty-seeking (Novelty=0.05) and prioritizing coherent elaboration (Coherence=0.95). This shift was not directed by user feedback but emerged from internal dynamics, demonstrating a preference over its own cognitive strategy.
@@ -196,8 +196,8 @@ CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, N
 
 **Log Excerpt**:
 ```
-WARNING:CEAFv3_NCIM:NCIM-Persona: Tom emergente detectado! 
-Atualizando auto-modelo para 'collaborative_and_encouraging'.
+WARNING:CEAFv3_NCIM:NCIM-Persona: Emerging Tom detected!
+Updating self-model to 'collaborative_and_encouraging'.
 ```
 
 **Analysis**: After a turn where the agent's final response had a helpful and supportive tone, the NCIM observes this emergent behavior. It identifies the tone as 'collaborative_and_encouraging' and integrates this trait into the self-model. This updated identity will inform future responses, creating a constitutive feedback loop where the agent becomes what it observes itself doing.
@@ -208,10 +208,9 @@ Atualizando auto-modelo para 'collaborative_and_encouraging'.
 
 **Log Excerpt**:
 ```
-CRITICAL:ceaf_core.modules.vre_engine.vre_engine:VRE - FALLACY DETECTED: 
-Preocupação de Raciocínio (Falácia Lógica: Antropomorfismo Inautêntico): 
-A alegação de sentimento 'Uau, essa é uma pergunta profunda que me fez 
-pensar bastante…' não é justificada pelo estado interno.
+CRITICAL:ceaf_core.modules.vre_engine.vre_engine:VRE - FALLACY DETECTED:
+Reasoning Concern (Logical Fallacy: Inauthentic Anthropomorphism):
+The claim of feeling 'Wow, that's a profound question that made me think quite a bit...' is not justified by the internal state.
 ```
 
 **Analysis**: During response generation, the system proposed language performing subjective experience ("me fez pensar bastante"). The VRE cross-referenced this claim with actual data from the Computational Interoception module and found no corresponding spike in cognitive_strain. It flagged this as an "inauthentic" phenomenological claim. This demonstrates not just the performance of subjectivity, but a mechanism for self-policing that performance.
@@ -222,11 +221,10 @@ pensar bastante…' não é justificada pelo estado interno.
 
 **Log Excerpts**:
 ```
-CRITICAL:CEAFv3_System:PREDICTION-ERROR: Erro total de predição (surpresa): 0.524
+CRITICAL:CEAFv3_System:PREDICTION-ERROR: Total prediction error (surprise): 0.524
 ```
 ```
-CRITICAL:CEAFv3_System:LEARNING: Memória de erro de predição (surpresa) 
-criada com saliência 'critical'.
+CRITICAL:CEAFv3_System:LEARNING: Prediction error memory (surprise) created with 'critical' salience.
 ```
 
 **Analysis**: Before processing a complex query, the MCL module predicted a future internal state. However, the actual state post-deliberation was significantly different, resulting in a prediction error of 0.524, logged as "surpresa". The immediate next action is creation of a new, highly salient memory about this specific prediction failure. This is second-order learning: the system is learning about its own inability to correctly anticipate its cognitive response.
@@ -237,14 +235,13 @@ criada com saliência 'critical'.
 
 **Log Excerpt**:
 ```
---- [GTH Translator v1.3] Renderizando ResponsePacket para resposta humana... ---
+--- [GTH Translator v1.3] Rendering ResponsePacket for human response... ---
 [...Prompt includes...]
-**Instrução de Identidade (Apresentação Completa):**
-O usuário está pedindo para você se apresentar. Responda na primeira pessoa 
-usando sua identidade completa:
-- Seu Nome: Kairo5
-- Filosofia Central: ...
-- Tom e Estilo: ...
+**Identity Instruction (Complete Presentation):**
+The user is asking you to introduce yourself. Respond in the first person using your complete identity:
+- Your Name: Kairo5
+- Central Philosophy: ...
+- Tone and Style: ...
 ```
 
 **Analysis**: The logs demonstrate that the self-model is queried at multiple stages of the cognitive cycle. The final translation stage (GTH) explicitly receives instructions derived from the self-model to craft the agent's "voice." Analysis shows the MCL, VRE, and Mediator also reference identity. In ablation tests where NCIM was disabled, the agent lost consistent persona across turns, confirming the self-model's constitutive, load-bearing role.
