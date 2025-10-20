@@ -4,6 +4,9 @@ A FastAPI-based platform for creating, managing, and interacting with advanced A
 
 The core of this project is an implementation and significant extension of the principles outlined in the **Agentic Context Engineering (ACE)** paper.
 
+https://claude.ai/public/artifacts/83fb581d-12ba-4c9c-9ba3-69378720c65c
+
+https://claude.ai/public/artifacts/64cfb126-4785-4e23-a183-261d2678bd07
 Current State:
 <img width="732" height="338" alt="image" src="https://github.com/user-attachments/assets/17f4063a-f198-4dc9-baa6-af52a85de012" />
 
