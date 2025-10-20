@@ -1,6 +1,6 @@
 # Aura Multi-Agent API (CEAF V3)
 
-A FastAPI-based platform for creating, managing, and interacting with advanced AI agents built on the **CEAF V3 (Coherent Emergence through Adaptive Framework)** cognitive architecture. This project provides a powerful foundation for developing agents that exhibit coherent identities, continuous learning, and structured ethical reasoning.
+A FastAPI-based platform for creating, managing, and interacting with advanced AI agents built on the **CEAF V3 (Coherent Emergence Architecture Framework)** cognitive architecture. This project provides a powerful foundation for developing agents that exhibit coherent identities, continuous learning, and structured ethical reasoning.
 
 The core of this project is an implementation and significant extension of the principles outlined in the **Agentic Context Engineering (ACE)** paper.
 
