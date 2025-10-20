@@ -69,7 +69,9 @@ CEAF is a multi-module cognitive architecture designed for coherent emergent beh
 
 ### 3.1 Core Components
 
-**Figure 1** (conceptual): CEAF consists of interconnected modules communicating via a structured internal language (Genlang), inspired by Diamond & ChatGPT (2023).
+**Figure 1**: CEAF consists of interconnected modules communicating via a structured internal language (Genlang).
+
+<img width="2402" height="3520" alt="Untitled diagram-2025-10-20-1439521" src="https://github.com/user-attachments/assets/9b316ce8-b89d-4f35-add6-fb7ff7bf2c62" />
 
 #### Metacognitive Loop (MCL)
 The system's supervisor. It analyzes incoming queries and current internal state to determine cognitive strategy, calculating an "agency score" to decide between a fast Direct Path or deliberative Mycelial Path. The MCL is modulated by **Motivational Drives** (curiosity, consistency, exploration) that create preferences over cognitive states.
