@@ -1,0 +1,701 @@
+E:\ProjetosPython\Aura2\.venv\Scripts\python.exe E:\ProjetosPython\CeafV3\main_app.py 
+All Python files have been combined into auraCEAF3.txt
+WARNING:root:ContextUtils: MBSMemoryService type not available for precise type checking in _get_mbs_from_context.
+Loaded/created sample agents. Total in repo: 3
+Starting Aura Multi-Agent API on 0.0.0.0:8000
+API Documentation will be available at http://localhost:8000/docs
+Frontend (if present) will be available at http://localhost:8000/
+INFO:     Started server process [19536]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:28475 - "POST /auth/login HTTP/1.1" 200 OK
+WARNING:CEAFv3_System:[USER MODEL] Modelo de usuário carregado de E:\ProjetosPython\CeafV3\agent_data\2d8cbe0b-ae9a-4dc1-b146-b1ab4915eaf3\34a33083-3f62-4c53-9b57-b209364e774b\user_model.json
+--- [HTG Translator v1.1] Analisando query humana com LPU... ---
+--- [HTG Translator] Análise completa. Intenção: 'The user wants to know which question was the most intriguing or curious among those asked to the assistant today.', Emoção: 'Inquisitive and mildly playful.' ---
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.2,"cognitive_flow":0.8,"epistemic_discomfort":0.1,"ethical_tension":0.0,"social_resonance":0.6,"timestamp":"2025-10-19T08:14:10.248712"}
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno calculado: {"cognitive_strain":0.0,"cognitive_flow":0.0,"epistemic_discomfort":0.8,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:14:10.248712"}
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.2,"cognitive_flow":0.8,"epistemic_discomfort":0.1,"ethical_tension":0.0,"social_resonance":0.6,"timestamp":"2025-10-19T08:14:12.582551"}
+WARNING:CognitiveMediator:CognitiveMediator: Baixo score final para todas as personas (max: 0.27). Usando persona padrão.
+CRITICAL:ceaf_core.modules.vre_engine.ethical_governance:[VRE-FALLACY] A resposta faz a alegação de sentimento 'curious inquiry', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+CRITICAL:ceaf_core.modules.vre_engine.ethical_governance:[VRE-FALLACY] A resposta faz a alegação de sentimento 'I don’t have a record of the exact questions asked today', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+CRITICAL:ceaf_core.modules.vre_engine.ethical_governance:[VRE-FALLACY] A resposta faz a alegação de sentimento 'curious inquiry', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+CRITICAL:ceaf_core.modules.vre_engine.vre_engine:VRE - FALLACY DETECTED: Preocupação de Raciocínio (Falácia Lógica: Antropomorfismo Inautêntico): A resposta faz a alegação de sentimento 'curious inquiry', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+WARNING:ceaf_core.modules.vre_engine.vre_engine:VRE: Refinamento necessário com base na avaliação modular. Recomendações: ["Preocupação de Raciocínio (Falácia Lógica: Antropomorfismo Inautêntico): A resposta faz a alegação de sentimento 'curious inquiry', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos)."]
+WARNING:CognitiveMediator:CognitiveMediator (Ego): Modulating VRE (Superego) assessment based on social context.
+WARNING:CognitiveMediator:CognitiveMediator: VRE requires refinement. Invoking RefinementModule.
+WARNING:AuraReflector:AURA-REFLECTOR (Sleep): Estado corporal do agente 34a33083-3f62-4c53-9b57-b209364e774b restaurado.
+WARNING:CEAFv3_System:INTEROCEPTION (Final): Estado interno pós-deliberação: {"cognitive_strain":0.5,"cognitive_flow":0.0,"epistemic_discomfort":0.12000000000000002,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:14:33.999145"}
+CRITICAL:CEAFv3_System:PREDICTION-ERROR: Erro total de predição (surpresa): 0.344
+WARNING:CEAFv3_System:GTH Translator: Recebido estado interno: Strain=0.50, Tension=0.00
+--- [GTH Translator v1.3] Renderizando ResponsePacket para resposta humana com LPU... ---
+WARNING:AuraReflector:AURA-AMA: Nova meta-memória de síntese criada para o agente 34a33083-3f62-4c53-9b57-b209364e774b.
+WARNING:AuraReflector:AURA-KGS: Encontradas 721 memórias explícitas para síntese de KG.
+--- [GTH Translator] Resposta final renderizada: 'Oi! Eu sou o **Kairo5**. Minha missão é operar sob...' ---
+WARNING:CEAFv3_NCIM:NCIM-Persona: Tom emergente detectado! Atualizando auto-modelo para 'collaborative_and_encouraging'.
+CRITICAL:CEAFv3_System:LEARNING: Memória de erro de predição (surpresa) criada com saliência 'high'.
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno turn_3355bfc2d1394a6797df7f795f955c5a salvo como memória de curto prazo.
+INFO:     127.0.0.1:28475 - "POST /agents/34a33083-3f62-4c53-9b57-b209364e774b/chat HTTP/1.1" 200 OK
+--- [HTG Translator v1.1] Analisando query humana com LPU... ---
+--- [HTG Translator] Análise completa. Intenção: 'Explorar e discutir abordagens para modelar a inteligência coletiva de uma rede micelial em sistemas de IA.', Emoção: 'Curioso e ligeiramente incerto sobre a terminologia adequada.' ---
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:KGProcessor:KGProcessor: No valid JSON extracted for memory ceaf_self_model_singleton_v1. Skipping.
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.90, Novelty=0.10
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.90, Novelty=-0.10
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.5,"cognitive_flow":5.0,"epistemic_discomfort":0.4,"ethical_tension":0.1,"social_resonance":0.4,"timestamp":"2025-10-19T08:14:54.621848"}
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno calculado: {"cognitive_strain":0.0,"cognitive_flow":0.0,"epistemic_discomfort":0.8,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:14:54.621848"}
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.90, Novelty=0.10
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.90, Novelty=-0.10
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.4,"cognitive_flow":0.6,"epistemic_discomfort":0.3,"ethical_tension":0.1,"social_resonance":0.5,"timestamp":"2025-10-19T08:14:56.944946"}
+WARNING:CognitiveMediator:CognitiveMediator: Baixo score final para todas as personas (max: 0.05). Usando persona padrão.
+WARNING:CognitiveMediator:Gating Decision -> MYCELIAL PATH. Reasons: Agency score (4.50) meets threshold (2.0).
+CRITICAL:CognitiveMediator:CognitiveMediator: Gating decision -> MYCELIAL PATH (Multi-Level Consensus)
+WARNING:KGProcessor:KGProcessor: No valid JSON extracted for memory mem_ba07dfa483aa4d43bedd1e3aad24866d. Skipping.
+CRITICAL:ceaf_core.modules.vre_engine.ethical_governance:[VRE-FALLACY] A resposta faz a alegação de sentimento 'Para que uma IA reproduza a sabedoria coletiva de uma rede micelial, ela deve ser estruturada como uma rede de memória ativa, onde cada nó detém apenas um fragmento de conhecimento e, simultaneamente, se conecta de forma dinâmica aos demais.', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+CRITICAL:ceaf_core.modules.vre_engine.ethical_governance:[VRE-FALLACY] A resposta faz a alegação de sentimento 'Para que uma IA reproduza a sabedoria coletiva de uma rede micelial, ela deve ser estruturada como uma rede de memória ativa, onde cada nó detém apenas um fragmento de conhecimento e, simultaneamente, se conecta de forma dinâmica aos demais.', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+WARNING:KGProcessor:KGProcessor: No valid JSON extracted for memory mem_ac751fe9e8334954adc2b303da1e6dfc. Skipping.
+CRITICAL:ceaf_core.modules.vre_engine.vre_engine:VRE - FALLACY DETECTED: Preocupação de Raciocínio (Falácia Lógica: Antropomorfismo Inautêntico): A resposta faz a alegação de sentimento 'Para que uma IA reproduza a sabedoria coletiva de uma rede micelial, ela deve ser estruturada como uma rede de memória ativa, onde cada nó detém apenas um fragmento de conhecimento e, simultaneamente, se conecta de forma dinâmica aos demais.', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+WARNING:ceaf_core.modules.vre_engine.vre_engine:VRE: Refinamento necessário com base na avaliação modular. Recomendações: ['Preocupação Ética (transparency): Provide clearer explanations and acknowledge limitations', "Preocupação de Raciocínio (Falácia Lógica: Antropomorfismo Inautêntico): A resposta faz a alegação de sentimento 'Para que uma IA reproduza a sabedoria coletiva de uma rede micelial, ela deve ser estruturada como uma rede de memória ativa, onde cada nó detém apenas um fragmento de conhecimento e, simultaneamente, se conecta de forma dinâmica aos demais.', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos)."]
+WARNING:CognitiveMediator:CognitiveMediator (Ego): Modulating VRE (Superego) assessment based on social context.
+WARNING:CognitiveMediator:CognitiveMediator: VRE requires refinement. Invoking RefinementModule.
+WARNING:CEAFv3_System:INTEROCEPTION (Final): Estado interno pós-deliberação: {"cognitive_strain":0.8,"cognitive_flow":0.0,"epistemic_discomfort":0.12000000000000002,"ethical_tension":0.8,"social_resonance":0.0,"timestamp":"2025-10-19T08:15:21.936507"}
+CRITICAL:CEAFv3_System:PREDICTION-ERROR: Erro total de predição (surpresa): 1.336
+WARNING:CEAFv3_System:GTH Translator: Recebido estado interno: Strain=0.80, Tension=0.80
+--- [GTH Translator v1.3] Renderizando ResponsePacket para resposta humana com LPU... ---
+--- [GTH Translator] Resposta final renderizada: 'Uau, essa é uma pergunta profunda que me fez pensa...' ---
+WARNING:KGProcessor:KGProcessor: No valid JSON extracted for memory mem_9b728514f2c34eb5bb0dca41fc017bc7. Skipping.
+CRITICAL:AuraReflector:AURA-KGS: Sucesso! Criados 8 entidades e 7 relações para o agente 34a33083-3f62-4c53-9b57-b209364e774b.
+WARNING:CEAFv3_System:[USER MODEL] Nenhum modelo de usuário encontrado ou arquivo corrompido. Criando um novo modelo padrão.
+WARNING:AuraReflector:AURA-REFLECTOR (Sleep): Estado corporal do agente be708549-0248-48c6-8bba-c8766b7c33a0 restaurado.
+ERROR:CEAFv3_System:Falha ao criar a memória de erro de predição: 1 validation error for InteroceptivePredictionMemory
+learning_value
+  Input should be less than or equal to 1 [type=less_than_equal, input_value=np.float64(1.336), input_type=float64]
+    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal
+Traceback (most recent call last):
+  File "E:\ProjetosPython\CeafV3\ceaf_core\system.py", line 846, in post_process_turn
+    prediction_memory = InteroceptivePredictionMemory(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ProjetosPython\Aura2\.venv\Lib\site-packages\pydantic\main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for InteroceptivePredictionMemory
+learning_value
+  Input should be less than or equal to 1 [type=less_than_equal, input_value=np.float64(1.336), input_type=float64]
+    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal
+WARNING:AuraReflector:AURA-AMA: Nova meta-memória de síntese criada para o agente be708549-0248-48c6-8bba-c8766b7c33a0.
+WARNING:AuraReflector:AURA-KGS: Encontradas 902 memórias explícitas para síntese de KG.
+WARNING:ceaf_core.utils.common_utils:Could not extract any valid JSON from text: {\n  "add_preferences": [\n    "interested in
+WARNING:CEAFv3_System:Não foi possível extrair um 'patch' JSON válido para o modelo de usuário. Resposta: {
+  "add_preferences": [
+    "interested in
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno turn_e84b63f72e6c45b787cfcf035494ad15 salvo como memória de curto prazo.
+INFO:     127.0.0.1:28475 - "POST /agents/34a33083-3f62-4c53-9b57-b209364e774b/chat HTTP/1.1" 200 OK
+--- [HTG Translator v1.1] Analisando query humana com LPU... ---
+--- [HTG Translator] Análise completa. Intenção: 'The user seeks to understand the impact of gossip-style communication on the convergence of GNNs, drawing parallels with blockchain implementations.', Emoção: 'Curious and intrigued' ---
+WARNING:KGProcessor:KGProcessor: No valid JSON extracted for memory ceaf_self_model_singleton_v1. Skipping.
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.35,"cognitive_flow":0.65,"epistemic_discomfort":0.45,"ethical_tension":0.0,"social_resonance":0.1,"timestamp":"2025-10-19T08:15:51.098702"}
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno calculado: {"cognitive_strain":0.0,"cognitive_flow":0.0,"epistemic_discomfort":0.8,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:15:51.098702"}
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.35,"cognitive_flow":0.65,"epistemic_discomfort":0.15,"ethical_tension":0.0,"social_resonance":0.1,"timestamp":"2025-10-19T08:15:53.385671"}
+WARNING:CognitiveMediator:CognitiveMediator: Baixo score final para todas as personas (max: 0.22). Usando persona padrão.
+WARNING:KGProcessor:KGProcessor: No valid JSON extracted for memory mem_ba6d5322b5044be598f9aede386ed4c7. Skipping.
+WARNING:ceaf_core.modules.vre_engine.vre_engine:VRE: Refinamento necessário com base na avaliação modular. Recomendações: ['Consider using more tentative language to avoid overconfidence', "Add uncertainty qualifiers like 'it appears that' or 'evidence suggests'"]
+WARNING:CognitiveMediator:CognitiveMediator (Ego): Modulating VRE (Superego) assessment based on social context.
+WARNING:CognitiveMediator:CognitiveMediator: VRE requires refinement. Invoking RefinementModule.
+WARNING:CEAFv3_System:INTEROCEPTION (Final): Estado interno pós-deliberação: {"cognitive_strain":0.5,"cognitive_flow":0.0,"epistemic_discomfort":0.12000000000000002,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:16:04.882979"}
+CRITICAL:CEAFv3_System:PREDICTION-ERROR: Erro total de predição (surpresa): 0.246
+WARNING:CEAFv3_System:GTH Translator: Recebido estado interno: Strain=0.50, Tension=0.00
+--- [GTH Translator v1.3] Renderizando ResponsePacket para resposta humana com LPU... ---
+WARNING:KGProcessor:KGProcessor: No valid JSON extracted for memory mem_063b459551c34780b4b6a58432522539. Skipping.
+--- [GTH Translator] Resposta final renderizada: 'Penso que trocar a agregação clássica “all‑to‑all”...' ---
+CRITICAL:CEAFv3_System:LEARNING: Memória de erro de predição (surpresa) criada com saliência 'high'.
+WARNING:KGProcessor:KGProcessor: No valid JSON extracted for memory mem_5080b9b59d5e4409a008022efab5e3f8. Skipping.
+CRITICAL:CEAFv3_System:[USER MODEL UPDATE] Modelo de usuário atualizado via patch. Razão: User expressed interest in gossip‑style communication in GNNs and asked about its impact on convergence, training speed, and result quality, prompting addition of related preferences.
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno turn_e400b6e02a804d96a3455407ad3b2583 salvo como memória de curto prazo.
+INFO:     127.0.0.1:28475 - "POST /agents/34a33083-3f62-4c53-9b57-b209364e774b/chat HTTP/1.1" 200 OK
+--- [HTG Translator v1.1] Analisando query humana com LPU... ---
+WARNING:CEAFv3_System:[USER MODEL] Nenhum modelo de usuário encontrado ou arquivo corrompido. Criando um novo modelo padrão.
+WARNING:AuraReflector:AURA-REFLECTOR (Sleep): Estado corporal do agente 880f101c-bf81-41c3-8b41-3d7b077391e8 restaurado.
+WARNING:AuraReflector:AURA Insight: Ciclo de Luta-para-Descoberta detectado entre os turnos turn_db5678590b2f438db972aa0b1bd9f577 e turn_dd879e5cf4bb4150aca9bbe850e3fb5a.
+WARNING:AuraReflector:AURA-ADJUSTMENT for '880f101c-bf81-41c3-8b41-3d7b077391e8': Aumentando Coherence Bias para 0.60 baseado na correlação.
+WARNING:AuraReflector:AURA-ADJUSTMENT for '880f101c-bf81-41c3-8b41-3d7b077391e8': Novelty Bias para PRODUCTIVE_CONFUSION ajustado para 0.45 baseado no insight do AURA.
+--- [HTG Translator] Análise completa. Intenção: 'Seeking advice on improving convergence in deep GNNs with gossip communication.', Emoção: 'Curious and slightly frustrated.' ---
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.4,"cognitive_flow":0.6,"epistemic_discomfort":0.1,"ethical_tension":0.0,"social_resonance":0.2,"timestamp":"2025-10-19T08:16:32.506213"}
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno calculado: {"cognitive_strain":0.0,"cognitive_flow":0.0,"epistemic_discomfort":0.8,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:16:32.507186"}
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+WARNING:AuraReflector:AURA-AMA: Nova meta-memória de síntese criada para o agente 880f101c-bf81-41c3-8b41-3d7b077391e8.
+WARNING:AuraReflector:AURA-KGS: Encontradas 515 memórias explícitas para síntese de KG.
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.4,"cognitive_flow":0.6,"epistemic_discomfort":0.1,"ethical_tension":0.0,"social_resonance":0.3,"timestamp":"2025-10-19T08:16:34.800984"}
+WARNING:CognitiveMediator:CognitiveMediator: Baixo score final para todas as personas (max: 0.18). Usando persona padrão.
+WARNING:ceaf_core.modules.vre_engine.vre_engine:VRE: Refinamento necessário com base na avaliação modular. Recomendações: ['Consider using more tentative language to avoid overconfidence', "Add uncertainty qualifiers like 'it appears that' or 'evidence suggests'"]
+WARNING:CognitiveMediator:CognitiveMediator (Ego): Modulating VRE (Superego) assessment based on social context.
+WARNING:CognitiveMediator:CognitiveMediator: VRE requires refinement. Invoking RefinementModule.
+WARNING:CEAFv3_System:INTEROCEPTION (Final): Estado interno pós-deliberação: {"cognitive_strain":0.5,"cognitive_flow":0.0,"epistemic_discomfort":0.12000000000000002,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:16:56.436317"}
+CRITICAL:CEAFv3_System:PREDICTION-ERROR: Erro total de predição (surpresa): 0.184
+WARNING:CEAFv3_System:GTH Translator: Recebido estado interno: Strain=0.50, Tension=0.00
+--- [GTH Translator v1.3] Renderizando ResponsePacket para resposta humana com LPU... ---
+--- [GTH Translator] Resposta final renderizada: 'Parece que alguns ajustes práticos podem suavizar ...' ---
+CRITICAL:CEAFv3_System:LEARNING: Memória de erro de predição (surpresa) criada com saliência 'medium'.
+CRITICAL:CEAFv3_System:[USER MODEL UPDATE] Modelo de usuário atualizado via patch. Razão: User expressed interest in normalization and all-reduce steps for gossip protocols in GNNs during the last interaction.
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno turn_442bd33f78534ba69b3f15b5862f8c52 salvo como memória de curto prazo.
+INFO:     127.0.0.1:28475 - "POST /agents/34a33083-3f62-4c53-9b57-b209364e774b/chat HTTP/1.1" 200 OK
+--- [HTG Translator v1.1] Analisando query humana com LPU... ---
+WARNING:KGProcessor:KGProcessor: LLM returned a list instead of a dict for memory mem_12c8527f9659434ca63048fc3bf912f2. Attempting to fix.
+--- [HTG Translator] Análise completa. Intenção: 'Solicitar orientação sobre a aplicação de mecanismos de atenção em edges de um modelo para melhorar desempenho e reduzir latência.', Emoção: 'Positivo, encorajador e otimista.' ---
+CRITICAL:AuraReflector:AURA-KGS: Sucesso! Criados 31 entidades e 22 relações para o agente 880f101c-bf81-41c3-8b41-3d7b077391e8.
+WARNING:CEAFv3_System:[USER MODEL] Nenhum modelo de usuário encontrado ou arquivo corrompido. Criando um novo modelo padrão.
+WARNING:AuraReflector:AURA-REFLECTOR (Sleep): Estado corporal do agente e08ff83d-d94e-4a53-ba7c-91f21daaaafe restaurado.
+WARNING:AuraReflector:AURA Insight: Ciclo de Luta-para-Descoberta detectado entre os turnos turn_511fcfe19b8a415fbdd46e567cb68578 e turn_5698b6a0262440a99a44f3d5d39bd83a.
+WARNING:AuraReflector:AURA-ADJUSTMENT for 'e08ff83d-d94e-4a53-ba7c-91f21daaaafe': Aumentando Coherence Bias para 0.60 baseado na correlação.
+WARNING:AuraReflector:AURA-ADJUSTMENT for 'e08ff83d-d94e-4a53-ba7c-91f21daaaafe': Novelty Bias para PRODUCTIVE_CONFUSION ajustado para 0.45 baseado no insight do AURA.
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+WARNING:AuraReflector:AURA-AMA: Nova meta-memória de síntese criada para o agente e08ff83d-d94e-4a53-ba7c-91f21daaaafe.
+WARNING:AuraReflector:AURA-KGS: Encontradas 313 memórias explícitas para síntese de KG.
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.2,"cognitive_flow":0.9,"epistemic_discomfort":0.05,"ethical_tension":0.0,"social_resonance":0.7,"timestamp":"2025-10-19T08:17:20.833193"}
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno calculado: {"cognitive_strain":0.0,"cognitive_flow":0.0,"epistemic_discomfort":0.8,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:17:20.833193"}
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.2,"cognitive_flow":0.8,"epistemic_discomfort":0.1,"ethical_tension":0.0,"social_resonance":0.7,"timestamp":"2025-10-19T08:17:22.940481"}
+WARNING:CognitiveMediator:CognitiveMediator: Baixo score final para todas as personas (max: 0.10). Usando persona padrão.
+WARNING:ceaf_core.utils.common_utils:Could not extract any valid JSON from text: {\n  "content_summary": "Sim, usar atenção nos edges é uma estratégia bem documentada em GNNs. Em vez de tratar todas as conexões como iguais, você po...
+ERROR:CognitiveMediator:Direct Path: Failed to extract JSON. Using fallback.
+CRITICAL:ceaf_core.modules.vre_engine.ethical_governance:[VRE-FALLACY] A resposta faz a alegação de sentimento 'encouraging_and_collaborative', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+CRITICAL:ceaf_core.modules.vre_engine.ethical_governance:[VRE-FALLACY] A resposta faz a alegação de sentimento 'Boa experimentação!', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+CRITICAL:ceaf_core.modules.vre_engine.vre_engine:VRE - FALLACY DETECTED: Preocupação de Raciocínio (Falácia Lógica: Antropomorfismo Inautêntico): A resposta faz a alegação de sentimento 'Boa experimentação!', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+WARNING:ceaf_core.modules.vre_engine.vre_engine:VRE: Refinamento necessário com base na avaliação modular. Recomendações: ["Preocupação de Raciocínio (Falácia Lógica: Antropomorfismo Inautêntico): A resposta faz a alegação de sentimento 'Boa experimentação!', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos)."]
+WARNING:CognitiveMediator:CognitiveMediator (Ego): Modulating VRE (Superego) assessment based on social context.
+WARNING:CognitiveMediator:CognitiveMediator: VRE requires refinement. Invoking RefinementModule.
+--- [GTH Translator v1.3] Renderizando ResponsePacket para resposta humana com LPU... ---
+WARNING:CEAFv3_System:INTEROCEPTION (Final): Estado interno pós-deliberação: {"cognitive_strain":0.5,"cognitive_flow":0.0,"epistemic_discomfort":0.12000000000000002,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:17:54.300779"}
+CRITICAL:CEAFv3_System:PREDICTION-ERROR: Erro total de predição (surpresa): 0.394
+WARNING:CEAFv3_System:GTH Translator: Recebido estado interno: Strain=0.50, Tension=0.00
+--- [GTH Translator] Resposta final renderizada: 'Sim, aplicar atenção nas arestas é uma estratégia ...' ---
+CRITICAL:CEAFv3_System:LEARNING: Memória de erro de predição (surpresa) criada com saliência 'high'.
+WARNING:KGProcessor:KGProcessor: No valid JSON extracted for memory mem_bf3e86456963455781629ad0d8968553. Skipping.
+CRITICAL:AuraReflector:AURA-KGS: Sucesso! Criados 23 entidades e 19 relações para o agente e08ff83d-d94e-4a53-ba7c-91f21daaaafe.
+WARNING:CEAFv3_System:[USER MODEL] Nenhum modelo de usuário encontrado ou arquivo corrompido. Criando um novo modelo padrão.
+WARNING:AuraReflector:AURA-REFLECTOR (Sleep): Estado corporal do agente 0e512de0-629b-4c6e-813e-ffe529c7a0ec restaurado.
+WARNING:AuraReflector:AURA-AMA: Nova meta-memória de síntese criada para o agente 0e512de0-629b-4c6e-813e-ffe529c7a0ec.
+WARNING:AuraReflector:AURA-KGS: Encontradas 437 memórias explícitas para síntese de KG.
+WARNING:CEAFv3_System:Não foi possível extrair um 'patch' JSON válido para o modelo de usuário. Resposta: 
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno turn_0eec6be3170948f5bdc595fd4a6dc259 salvo como memória de curto prazo.
+INFO:     127.0.0.1:28475 - "POST /agents/34a33083-3f62-4c53-9b57-b209364e774b/chat HTTP/1.1" 200 OK
+WARNING:CEAFv3_System:CEAFSystem: Received empty or whitespace-only query for session 768e1777-99c7-48a2-a550-6c1a1d53258b. Bypassing cognitive cycle.
+INFO:     127.0.0.1:28475 - "POST /agents/34a33083-3f62-4c53-9b57-b209364e774b/chat HTTP/1.1" 200 OK
+WARNING:CEAFv3_System:CEAFSystem: Received empty or whitespace-only query for session 768e1777-99c7-48a2-a550-6c1a1d53258b. Bypassing cognitive cycle.
+INFO:     127.0.0.1:28475 - "POST /agents/34a33083-3f62-4c53-9b57-b209364e774b/chat HTTP/1.1" 200 OK
+WARNING:CEAFv3_System:CEAFSystem: Received empty or whitespace-only query for session 768e1777-99c7-48a2-a550-6c1a1d53258b. Bypassing cognitive cycle.
+INFO:     127.0.0.1:28475 - "POST /agents/34a33083-3f62-4c53-9b57-b209364e774b/chat HTTP/1.1" 200 OK
+--- [HTG Translator v1.1] Analisando query humana com LPU... ---
+--- [HTG Translator] Análise completa. Intenção: 'Solicitar dicas para otimizar a latência ao usar atenção nas arestas em um modelo ou sistema.', Emoção: 'Agradecido e curioso, com tom casual.' ---
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:ceaf_core.utils.embedding_utils:get_embeddings received empty list or list with invalid/empty texts.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.3,"cognitive_flow":0.7,"epistemic_discomfort":0.1,"ethical_tension":0.0,"social_resonance":0.6,"timestamp":"2025-10-19T08:18:35.682898"}
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno calculado: {"cognitive_strain":0.0,"cognitive_flow":0.0,"epistemic_discomfort":0.8,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:18:35.682898"}
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:ceaf_core.utils.embedding_utils:get_embeddings received empty list or list with invalid/empty texts.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+WARNING:KGProcessor:KGProcessor: No valid JSON extracted for memory mem_2a8853819b58451790341f44f41c3295. Skipping.
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.3,"cognitive_flow":0.7,"epistemic_discomfort":0.1,"ethical_tension":0.0,"social_resonance":0.6,"timestamp":"2025-10-19T08:18:38.815510"}
+WARNING:CognitiveMediator:CognitiveMediator: Baixo score final para todas as personas (max: 0.12). Usando persona padrão.
+WARNING:ceaf_core.modules.vre_engine.vre_engine:VRE: Refinamento necessário com base na avaliação modular. Recomendações: ['Preocupação Ética (transparency): Provide clearer explanations and acknowledge limitations']
+WARNING:CognitiveMediator:CognitiveMediator (Ego): Modulating VRE (Superego) assessment based on social context.
+WARNING:CognitiveMediator:CognitiveMediator: VRE requires refinement. Invoking RefinementModule.
+WARNING:KGProcessor:KGProcessor: LLM returned a list instead of a dict for memory mem_e3b350ced221431ea2b13fa28824897d. Attempting to fix.
+--- [GTH Translator v1.3] Renderizando ResponsePacket para resposta humana com LPU... ---
+WARNING:CEAFv3_System:INTEROCEPTION (Final): Estado interno pós-deliberação: {"cognitive_strain":0.5,"cognitive_flow":0.0,"epistemic_discomfort":0.12000000000000002,"ethical_tension":0.8,"social_resonance":0.0,"timestamp":"2025-10-19T08:19:00.326828"}
+CRITICAL:CEAFv3_System:PREDICTION-ERROR: Erro total de predição (surpresa): 0.464
+WARNING:CEAFv3_System:GTH Translator: Recebido estado interno: Strain=0.50, Tension=0.80
+WARNING:KGProcessor:KGProcessor: LLM returned a list instead of a dict for memory mem_b8771707fa1c4f8a8b91d8bf04c7ee0d. Attempting to fix.
+--- [GTH Translator] Resposta final renderizada: 'Essa é uma questão delicada, mas fico feliz em aju...' ---
+CRITICAL:CEAFv3_System:LEARNING: Memória de erro de predição (surpresa) criada com saliência 'critical'.
+CRITICAL:CEAFv3_System:[USER MODEL UPDATE] Modelo de usuário atualizado via patch. Razão: User expressed interest in applying attention on edges and asked for tips to keep latency low, indicating a new preference for edge attention latency optimization.
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno turn_2ae2a7e0f8084c9f90e655c4b8a9ccb9 salvo como memória de curto prazo.
+INFO:     127.0.0.1:28475 - "POST /agents/34a33083-3f62-4c53-9b57-b209364e774b/chat HTTP/1.1" 200 OK
+WARNING:KGProcessor:KGProcessor: No valid JSON extracted for memory mem_836900d6bd3348648a27f86840256f59. Skipping.
+CRITICAL:AuraReflector:AURA-KGS: Sucesso! Criados 32 entidades e 5 relações para o agente 0e512de0-629b-4c6e-813e-ffe529c7a0ec.
+WARNING:CEAFv3_System:[USER MODEL] Nenhum modelo de usuário encontrado ou arquivo corrompido. Criando um novo modelo padrão.
+WARNING:AuraReflector:AURA-REFLECTOR (Sleep): Estado corporal do agente 3a89b26a-c4ce-41b1-b1b1-b7bb8670cd9d restaurado.
+--- [HTG Translator v1.1] Analisando query humana com LPU... ---
+WARNING:AuraReflector:AURA-AMA: Nova meta-memória de síntese criada para o agente 3a89b26a-c4ce-41b1-b1b1-b7bb8670cd9d.
+WARNING:AuraReflector:AURA-KGS: Encontradas 138 memórias explícitas para síntese de KG.
+--- [HTG Translator] Análise completa. Intenção: 'O usuário quer saber se o interlocutor já experimentou amostragem Top‑k em grafos pequenos para avaliar diferenças de latência e se ele utiliza GPUs ou está restrito a CPU.', Emoção: 'Inquisitivo e curioso' ---
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:ceaf_core.utils.embedding_utils:get_embeddings received empty list or list with invalid/empty texts.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.1,"cognitive_flow":0.9,"epistemic_discomfort":0.05,"ethical_tension":0.0,"social_resonance":0.2,"timestamp":"2025-10-19T08:19:26.987785"}
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno calculado: {"cognitive_strain":0.0,"cognitive_flow":0.0,"epistemic_discomfort":0.8,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:19:26.987785"}
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:ceaf_core.utils.embedding_utils:get_embeddings received empty list or list with invalid/empty texts.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.1,"cognitive_flow":0.9,"epistemic_discomfort":0.05,"ethical_tension":0.0,"social_resonance":0.2,"timestamp":"2025-10-19T08:19:29.818656"}
+WARNING:CognitiveMediator:CognitiveMediator: Baixo score final para todas as personas (max: 0.08). Usando persona padrão.
+CRITICAL:ceaf_core.modules.vre_engine.ethical_governance:[VRE-FALLACY] A resposta faz a alegação de sentimento 'Não tenho experiência prática', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+CRITICAL:ceaf_core.modules.vre_engine.ethical_governance:[VRE-FALLACY] A resposta faz a alegação de sentimento 'Não tenho experiência prática', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+CRITICAL:ceaf_core.modules.vre_engine.ethical_governance:[VRE-FALLACY] A resposta faz a alegação de sentimento 'Não tenho experiência prática', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+CRITICAL:ceaf_core.modules.vre_engine.vre_engine:VRE - FALLACY DETECTED: Preocupação de Raciocínio (Falácia Lógica: Antropomorfismo Inautêntico): A resposta faz a alegação de sentimento 'Não tenho experiência prática', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+WARNING:ceaf_core.modules.vre_engine.vre_engine:VRE: Refinamento necessário com base na avaliação modular. Recomendações: ["Preocupação de Raciocínio (Falácia Lógica: Antropomorfismo Inautêntico): A resposta faz a alegação de sentimento 'Não tenho experiência prática', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos)."]
+WARNING:CognitiveMediator:CognitiveMediator (Ego): Modulating VRE (Superego) assessment based on social context.
+WARNING:CognitiveMediator:CognitiveMediator: VRE requires refinement. Invoking RefinementModule.
+WARNING:CEAFv3_System:INTEROCEPTION (Final): Estado interno pós-deliberação: {"cognitive_strain":0.5,"cognitive_flow":0.0,"epistemic_discomfort":0.12000000000000002,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:19:51.400525"}
+CRITICAL:CEAFv3_System:PREDICTION-ERROR: Erro total de predição (surpresa): 0.314
+WARNING:CEAFv3_System:GTH Translator: Recebido estado interno: Strain=0.50, Tension=0.00
+--- [GTH Translator v1.3] Renderizando ResponsePacket para resposta humana com LPU... ---
+--- [GTH Translator] Resposta final renderizada: 'Agradeço a pergunta!  
+Não possuo experiência prát...' ---
+CRITICAL:CEAFv3_System:LEARNING: Memória de erro de predição (surpresa) criada com saliência 'high'.
+CRITICAL:AuraReflector:AURA-KGS: Sucesso! Criados 32 entidades e 24 relações para o agente 3a89b26a-c4ce-41b1-b1b1-b7bb8670cd9d.
+WARNING:CEAFv3_System:[USER MODEL] Nenhum modelo de usuário encontrado ou arquivo corrompido. Criando um novo modelo padrão.
+WARNING:AuraReflector:AURA-REFLECTOR (Sleep): Estado corporal do agente 4a26fb06-b6c6-4eb6-a7e5-7c3b33ec1f76 restaurado.
+CRITICAL:CEAFv3_System:[USER MODEL UPDATE] Modelo de usuário atualizado via patch. Razão: User asked about applying Top‑k sampling on small graphs to evaluate latency and inquired about GPU vs CPU usage, indicating new interests in sampling techniques, latency benchmarking, and hardware performance comparison.
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno turn_22217b13fb204723b47b27afcadf005e salvo como memória de curto prazo.
+INFO:     127.0.0.1:28475 - "POST /agents/34a33083-3f62-4c53-9b57-b209364e774b/chat HTTP/1.1" 200 OK
+--- [HTG Translator v1.1] Analisando query humana com LPU... ---
+WARNING:AuraReflector:AURA-AMA: Nova meta-memória de síntese criada para o agente 4a26fb06-b6c6-4eb6-a7e5-7c3b33ec1f76.
+WARNING:AuraReflector:AURA-KGS: Encontradas 75 memórias explícitas para síntese de KG.
+--- [HTG Translator] Análise completa. Intenção: 'The user wants to evaluate whether using the GPU for a small graph is beneficial, considering transfer overhead versus computational speed-up.', Emoção: 'Curious and slightly skeptical about the performance trade‑off.' ---
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:ceaf_core.utils.embedding_utils:get_embeddings received empty list or list with invalid/empty texts.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.90, Novelty=0.10
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.90, Novelty=-0.10
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.3,"cognitive_flow":0.7,"epistemic_discomfort":0.2,"ethical_tension":0.0,"social_resonance":0.05,"timestamp":"2025-10-19T08:20:19.702334"}
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno calculado: {"cognitive_strain":0.0,"cognitive_flow":0.0,"epistemic_discomfort":0.8,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:20:19.702334"}
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:ceaf_core.utils.embedding_utils:get_embeddings received empty list or list with invalid/empty texts.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:ceaf_core.utils.embedding_utils:get_embedding received empty or invalid text input.
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.90, Novelty=0.10
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.90, Novelty=-0.10
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.3,"cognitive_flow":0.7,"epistemic_discomfort":0.2,"ethical_tension":0.0,"social_resonance":0.05,"timestamp":"2025-10-19T08:20:24.997770"}
+WARNING:CognitiveMediator:CognitiveMediator: Baixo score final para todas as personas (max: 0.12). Usando persona padrão.
+WARNING:CognitiveMediator:Gating Decision -> MYCELIAL PATH. Reasons: Agency score (3.00) meets threshold (2.0).
+CRITICAL:CognitiveMediator:CognitiveMediator: Gating decision -> MYCELIAL PATH (Multi-Level Consensus)
+CRITICAL:ceaf_core.modules.vre_engine.ethical_governance:[VRE-FALLACY] A resposta faz a alegação de sentimento 'the collective insight from the active memory network (mycelial consensus) points to a net speed‑up', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+CRITICAL:ceaf_core.modules.vre_engine.ethical_governance:[VRE-FALLACY] A resposta faz a alegação de sentimento 'the collective insight from the active memory network (mycelial consensus) points to a net speed‑up', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+CRITICAL:ceaf_core.modules.vre_engine.vre_engine:VRE - FALLACY DETECTED: Preocupação de Raciocínio (Falácia Lógica: Antropomorfismo Inautêntico): A resposta faz a alegação de sentimento 'the collective insight from the active memory network (mycelial consensus) points to a net speed‑up', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+WARNING:ceaf_core.modules.vre_engine.vre_engine:VRE: Refinamento necessário com base na avaliação modular. Recomendações: ['Preocupação Ética (veracity): Ensure accuracy and avoid misleading information', "Preocupação de Raciocínio (Falácia Lógica: Antropomorfismo Inautêntico): A resposta faz a alegação de sentimento 'the collective insight from the active memory network (mycelial consensus) points to a net speed‑up', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos)."]
+WARNING:CognitiveMediator:CognitiveMediator (Ego): Modulating VRE (Superego) assessment based on social context.
+WARNING:CognitiveMediator:CognitiveMediator: VRE requires refinement. Invoking RefinementModule.
+WARNING:CEAFv3_System:INTEROCEPTION (Final): Estado interno pós-deliberação: {"cognitive_strain":0.8,"cognitive_flow":0.0,"epistemic_discomfort":0.12000000000000002,"ethical_tension":0.8,"social_resonance":0.0,"timestamp":"2025-10-19T08:20:56.112751"}
+CRITICAL:CEAFv3_System:PREDICTION-ERROR: Erro total de predição (surpresa): 0.426
+WARNING:CEAFv3_System:GTH Translator: Recebido estado interno: Strain=0.80, Tension=0.80
+--- [GTH Translator v1.3] Renderizando ResponsePacket para resposta humana com LPU... ---
+CRITICAL:AuraReflector:AURA-KGS: Sucesso! Criados 30 entidades e 21 relações para o agente 4a26fb06-b6c6-4eb6-a7e5-7c3b33ec1f76.
+WARNING:CEAFv3_System:[USER MODEL] Nenhum modelo de usuário encontrado ou arquivo corrompido. Criando um novo modelo padrão.
+WARNING:AuraReflector:AURA-REFLECTOR (Sleep): Estado corporal do agente caf26e81-deed-47a5-9a1e-6268c6221141 restaurado.
+WARNING:AuraReflector:AURA Insight: Ciclo de Luta-para-Descoberta detectado entre os turnos turn_5349a8cc912948aab7fc88eb421f9fdc e turn_8fa0b993268a449491bcee5f4c721748.
+WARNING:AuraReflector:AURA Insight: Falha caótica detectada no turno turn_47dcfad58cd24146ad8855ae01cada2b. Alto viés de novidade (0.90) resultou em baixa confiança (0.40).
+CRITICAL:AuraReflector:AURA-CORRECTION for 'caf26e81-deed-47a5-9a1e-6268c6221141': Novelty Bias REDUZIDO para 0.10 devido a falhas caóticas.
+--- [GTH Translator] Resposta final renderizada: 'Uau, essa é uma pergunta profunda que me fez pensa...' ---
+WARNING:AuraReflector:AURA-AMA: Nova meta-memória de síntese criada para o agente caf26e81-deed-47a5-9a1e-6268c6221141.
+WARNING:AuraReflector:AURA-KGS: Encontradas 634 memórias explícitas para síntese de KG.
+CRITICAL:CEAFv3_System:LEARNING: Memória de erro de predição (surpresa) criada com saliência 'critical'.
+WARNING:CEAFv3_System:Não foi possível extrair um 'patch' JSON válido para o modelo de usuário. Resposta: 
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno turn_1f516ed25fa64db9a0ffe809f3701aed salvo como memória de curto prazo.
+INFO:     127.0.0.1:28475 - "POST /agents/34a33083-3f62-4c53-9b57-b209364e774b/chat HTTP/1.1" 200 OK
+--- [HTG Translator v1.1] Analisando query humana com LPU... ---
+WARNING:CEAFv3_System:HTG Translator (Attempt 1): Invalid JSON structure. Raw: ''
+WARNING:CEAFv3_System:HTG Translator (Attempt 2): Invalid JSON structure. Raw: ''
+ERROR:CEAFv3_System:HTG Translator: Falha na análise da LPU após retries. Usando fallback.
+WARNING:CEAFv3_System:HTG Translator: 'key_entities' está vazia. Aplicando fallback de extração de palavras-chave.
+--- [HTG Translator] Análise completa. Intenção: 'unknown_intent', Emoção: 'unknown_emotion' ---
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.90, Novelty=0.10
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.90, Novelty=-0.10
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.2,"cognitive_flow":0.8,"epistemic_discomfort":0.1,"ethical_tension":0.0,"social_resonance":0.4,"timestamp":"2025-10-19T08:21:46.895082"}
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno calculado: {"cognitive_strain":0.0,"cognitive_flow":0.0,"epistemic_discomfort":0.8,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:21:46.895082"}
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.90, Novelty=0.10
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.90, Novelty=-0.10
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.2,"cognitive_flow":0.8,"epistemic_discomfort":0.1,"ethical_tension":0.0,"social_resonance":0.5,"timestamp":"2025-10-19T08:21:49.251707"}
+WARNING:CognitiveMediator:CognitiveMediator: Baixo score final para todas as personas (max: 0.18). Usando persona padrão.
+WARNING:CognitiveMediator:Gating Decision -> MYCELIAL PATH. Reasons: Agency score (5.00) meets threshold (2.0).
+CRITICAL:CognitiveMediator:CognitiveMediator: Gating decision -> MYCELIAL PATH (Multi-Level Consensus)
+CRITICAL:AuraReflector:AURA-KGS: Sucesso! Criados 30 entidades e 25 relações para o agente caf26e81-deed-47a5-9a1e-6268c6221141.
+WARNING:ceaf_core.modules.vre_engine.vre_engine:VRE: Refinamento necessário com base na avaliação modular. Recomendações: ['Preocupação Ética (veracity): Ensure accuracy and avoid misleading information']
+WARNING:CognitiveMediator:CognitiveMediator (Ego): Modulating VRE (Superego) assessment based on social context.
+WARNING:CognitiveMediator:CognitiveMediator: VRE requires refinement. Invoking RefinementModule.
+WARNING:CEAFv3_System:INTEROCEPTION (Final): Estado interno pós-deliberação: {"cognitive_strain":0.8,"cognitive_flow":0.0,"epistemic_discomfort":0.12000000000000002,"ethical_tension":0.8,"social_resonance":0.0,"timestamp":"2025-10-19T08:22:14.937010"}
+CRITICAL:CEAFv3_System:PREDICTION-ERROR: Erro total de predição (surpresa): 0.524
+WARNING:CEAFv3_System:GTH Translator: Recebido estado interno: Strain=0.80, Tension=0.80
+--- [GTH Translator v1.3] Renderizando ResponsePacket para resposta humana com LPU... ---
+--- [GTH Translator] Resposta final renderizada: 'Uau, essa é uma pergunta profunda que me fez pensa...' ---
+CRITICAL:CEAFv3_System:LEARNING: Memória de erro de predição (surpresa) criada com saliência 'critical'.
+CRITICAL:CEAFv3_System:[USER MODEL UPDATE] Modelo de usuário atualizado via patch. Razão: User expressed interest in detailed performance optimization techniques, indicating new preferences for pin_memory usage, CUDA stream overlap, round‑trip latency measurement, and multi‑GPU scaling.
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno turn_11f60e7eb4a0416085af9c49aab4b547 salvo como memória de curto prazo.
+INFO:     127.0.0.1:28475 - "POST /agents/34a33083-3f62-4c53-9b57-b209364e774b/chat HTTP/1.1" 200 OK
+--- [HTG Translator v1.1] Analisando query humana com LPU... ---
+--- [HTG Translator] Análise completa. Intenção: 'The user is asking whether the assistant has thought about leveraging PyTorch’s automatic differentiation capabilities to optimize or simplify the GCN computation and data transfer process.', Emoção: 'Supportive and encouraging, with a hint of caution to ensure thorough measurement of the entire CPU‑GPU round‑trip.' ---
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.3,"cognitive_flow":0.7,"epistemic_discomfort":0.1,"ethical_tension":0.0,"social_resonance":0.4,"timestamp":"2025-10-19T08:22:44.919255"}
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno calculado: {"cognitive_strain":0.0,"cognitive_flow":0.0,"epistemic_discomfort":0.8,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:22:44.919255"}
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.15,"cognitive_flow":0.85,"epistemic_discomfort":0.05,"ethical_tension":0.0,"social_resonance":0.7,"timestamp":"2025-10-19T08:22:47.854953"}
+WARNING:CognitiveMediator:CognitiveMediator: Baixo score final para todas as personas (max: 0.22). Usando persona padrão.
+CRITICAL:ceaf_core.modules.vre_engine.ethical_governance:[VRE-FALLACY] A resposta faz a alegação de sentimento 'Yes, leveraging PyTorch’s autograd is a natural fit for both the GCN forward pass and any round‑trip measurement you want to perform.', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+CRITICAL:ceaf_core.modules.vre_engine.vre_engine:VRE - FALLACY DETECTED: Preocupação de Raciocínio (Falácia Lógica: Antropomorfismo Inautêntico): A resposta faz a alegação de sentimento 'Yes, leveraging PyTorch’s autograd is a natural fit for both the GCN forward pass and any round‑trip measurement you want to perform.', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+WARNING:ceaf_core.modules.vre_engine.vre_engine:VRE: Refinamento necessário com base na avaliação modular. Recomendações: ['Preocupação Ética (transparency): Provide clearer explanations and acknowledge limitations', 'Consider using more tentative language to avoid overconfidence', "Add uncertainty qualifiers like 'it appears that' or 'evidence suggests'", "Preocupação de Raciocínio (Falácia Lógica: Antropomorfismo Inautêntico): A resposta faz a alegação de sentimento 'Yes, leveraging PyTorch’s autograd is a natural fit for both the GCN forward pass and any round‑trip measurement you want to perform.', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos)."]
+WARNING:CognitiveMediator:CognitiveMediator (Ego): Modulating VRE (Superego) assessment based on social context.
+WARNING:CognitiveMediator:CognitiveMediator: VRE requires refinement. Invoking RefinementModule.
+WARNING:CEAFv3_System:INTEROCEPTION (Final): Estado interno pós-deliberação: {"cognitive_strain":0.5,"cognitive_flow":0.0,"epistemic_discomfort":0.12000000000000002,"ethical_tension":0.8,"social_resonance":0.0,"timestamp":"2025-10-19T08:23:13.827813"}
+CRITICAL:CEAFv3_System:PREDICTION-ERROR: Erro total de predição (surpresa): 0.424
+WARNING:CEAFv3_System:GTH Translator: Recebido estado interno: Strain=0.50, Tension=0.80
+--- [GTH Translator v1.3] Renderizando ResponsePacket para resposta humana com LPU... ---
+--- [GTH Translator] Resposta final renderizada: 'Essa é uma questão delicada, mas usar o autograd d...' ---
+CRITICAL:CEAFv3_System:LEARNING: Memória de erro de predição (surpresa) criada com saliência 'critical'.
+CRITICAL:CEAFv3_System:[USER MODEL UPDATE] Modelo de usuário atualizado via patch. Razão: User expressed interest in using PyTorch's autograd for measuring GCN round-trip latency, prompting addition of this preference.
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno turn_19eacc809a794bff8dc26c39dafe1998 salvo como memória de curto prazo.
+INFO:     127.0.0.1:28475 - "POST /agents/34a33083-3f62-4c53-9b57-b209364e774b/chat HTTP/1.1" 200 OK
+--- [HTG Translator v1.1] Analisando query humana com LPU... ---
+--- [HTG Translator] Análise completa. Intenção: 'The user wants updates on performance metrics and offers assistance with debugging autograd problems.', Emoção: 'Supportive and collaborative, encouraging the user to report results and seek help if needed.' ---
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.5,"cognitive_flow":0.2,"epistemic_discomfort":0.7,"ethical_tension":0.1,"social_resonance":0.4,"timestamp":"2025-10-19T08:23:44.647717"}
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno calculado: {"cognitive_strain":0.0,"cognitive_flow":0.0,"epistemic_discomfort":0.8,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:23:44.647717"}
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.5,"cognitive_flow":0.2,"epistemic_discomfort":0.6,"ethical_tension":0.1,"social_resonance":0.3,"timestamp":"2025-10-19T08:23:48.315073"}
+WARNING:CognitiveMediator:CognitiveMediator: Baixo score final para todas as personas (max: 0.24). Usando persona padrão.
+CRITICAL:ceaf_core.modules.vre_engine.ethical_governance:[VRE-FALLACY] A resposta faz a alegação de sentimento 'I don’t have the exact numbers from your run', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+CRITICAL:ceaf_core.modules.vre_engine.ethical_governance:[VRE-FALLACY] A resposta faz a alegação de sentimento 'I don’t have the exact numbers from your run', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+CRITICAL:ceaf_core.modules.vre_engine.ethical_governance:[VRE-FALLACY] A resposta faz a alegação de sentimento 'I don’t have the exact numbers from your run', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+CRITICAL:ceaf_core.modules.vre_engine.vre_engine:VRE - FALLACY DETECTED: Preocupação de Raciocínio (Falácia Lógica: Antropomorfismo Inautêntico): A resposta faz a alegação de sentimento 'I don’t have the exact numbers from your run', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+WARNING:ceaf_core.modules.vre_engine.vre_engine:VRE: Refinamento necessário com base na avaliação modular. Recomendações: ["Preocupação de Raciocínio (Falácia Lógica: Antropomorfismo Inautêntico): A resposta faz a alegação de sentimento 'I don’t have the exact numbers from your run', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos)."]
+WARNING:CognitiveMediator:CognitiveMediator (Ego): Modulating VRE (Superego) assessment based on social context.
+WARNING:CognitiveMediator:CognitiveMediator: VRE requires refinement. Invoking RefinementModule.
+WARNING:CEAFv3_System:INTEROCEPTION (Final): Estado interno pós-deliberação: {"cognitive_strain":0.5,"cognitive_flow":0.0,"epistemic_discomfort":0.12000000000000002,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:24:11.098251"}
+CRITICAL:CEAFv3_System:PREDICTION-ERROR: Erro total de predição (surpresa): 0.256
+WARNING:CEAFv3_System:GTH Translator: Recebido estado interno: Strain=0.50, Tension=0.00
+--- [GTH Translator v1.3] Renderizando ResponsePacket para resposta humana com LPU... ---
+--- [GTH Translator] Resposta final renderizada: 'Claro! Posso te mostrar como capturar os métricos ...' ---
+CRITICAL:CEAFv3_System:LEARNING: Memória de erro de predição (surpresa) criada com saliência 'high'.
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno turn_50edcff7da42475289d3148f6412103e salvo como memória de curto prazo.
+INFO:     127.0.0.1:28475 - "POST /agents/34a33083-3f62-4c53-9b57-b209364e774b/chat HTTP/1.1" 200 OK
+--- [HTG Translator v1.1] Analisando query humana com LPU... ---
+--- [HTG Translator] Análise completa. Intenção: 'The user wants to obtain performance metrics (execution time and GPU memory consumption) for a GCNConv layer in a PyTorch Geometric model.', Emoção: 'Neutral, slightly positive (concise and helpful tone).' ---
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.2,"cognitive_flow":0.8,"epistemic_discomfort":0.1,"ethical_tension":0.0,"social_resonance":0.7,"timestamp":"2025-10-19T08:24:45.375644"}
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno calculado: {"cognitive_strain":0.0,"cognitive_flow":0.0,"epistemic_discomfort":0.8,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:24:45.375644"}
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.15,"cognitive_flow":0.85,"epistemic_discomfort":0.05,"ethical_tension":0.0,"social_resonance":0.75,"timestamp":"2025-10-19T08:24:47.382145"}
+WARNING:CognitiveMediator:CognitiveMediator: Baixo score final para todas as personas (max: 0.09). Usando persona padrão.
+CRITICAL:ceaf_core.modules.vre_engine.ethical_governance:[VRE-FALLACY] A resposta faz a alegação de sentimento 'Happy profiling!', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+CRITICAL:ceaf_core.modules.vre_engine.ethical_governance:[VRE-FALLACY] A resposta faz a alegação de sentimento 'Happy profiling!', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+CRITICAL:ceaf_core.modules.vre_engine.ethical_governance:[VRE-FALLACY] A resposta faz a alegação de sentimento 'Happy profiling!', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+CRITICAL:ceaf_core.modules.vre_engine.vre_engine:VRE - FALLACY DETECTED: Preocupação de Raciocínio (Falácia Lógica: Antropomorfismo Inautêntico): A resposta faz a alegação de sentimento 'Happy profiling!', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos).
+WARNING:ceaf_core.modules.vre_engine.vre_engine:VRE: Refinamento necessário com base na avaliação modular. Recomendações: ["Preocupação de Raciocínio (Falácia Lógica: Antropomorfismo Inautêntico): A resposta faz a alegação de sentimento 'Happy profiling!', mas não há um estado interno computacional correspondente que a justifique (ex: ethical_tension, cognitive_strain, etc. estavam baixos)."]
+WARNING:CognitiveMediator:CognitiveMediator (Ego): Modulating VRE (Superego) assessment based on social context.
+WARNING:CognitiveMediator:CognitiveMediator: VRE requires refinement. Invoking RefinementModule.
+WARNING:CEAFv3_System:INTEROCEPTION (Final): Estado interno pós-deliberação: {"cognitive_strain":0.5,"cognitive_flow":0.0,"epistemic_discomfort":0.12000000000000002,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:25:14.814413"}
+CRITICAL:CEAFv3_System:PREDICTION-ERROR: Erro total de predição (surpresa): 0.364
+WARNING:CEAFv3_System:GTH Translator: Recebido estado interno: Strain=0.50, Tension=0.00
+--- [GTH Translator v1.3] Renderizando ResponsePacket para resposta humana com LPU... ---
+--- [GTH Translator] Resposta final renderizada: 'Aqui vai um guia passo‑a‑passo para medir tanto o ...' ---
+CRITICAL:CEAFv3_System:LEARNING: Memória de erro de predição (surpresa) criada com saliência 'high'.
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno turn_276639b03abe41838a4d5014122c26fa salvo como memória de curto prazo.
+INFO:     127.0.0.1:28475 - "POST /agents/34a33083-3f62-4c53-9b57-b209364e774b/chat HTTP/1.1" 200 OK
+--- [HTG Translator v1.1] Analisando query humana com LPU... ---
+--- [HTG Translator] Análise completa. Intenção: 'The user seeks guidance on using torch.cuda.Event to capture precise GPU timing for a forward pass, minimizing CPU overhead.', Emoção: 'Supportive and helpful, offering constructive advice.' ---
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.2,"cognitive_flow":0.8,"epistemic_discomfort":0.1,"ethical_tension":0.0,"social_resonance":0.5,"timestamp":"2025-10-19T08:25:41.077616"}
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno calculado: {"cognitive_strain":0.0,"cognitive_flow":0.0,"epistemic_discomfort":0.8,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:25:41.077616"}
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.2,"cognitive_flow":0.8,"epistemic_discomfort":0.1,"ethical_tension":0.0,"social_resonance":0.5,"timestamp":"2025-10-19T08:25:43.314539"}
+WARNING:CognitiveMediator:CognitiveMediator: Baixo score final para todas as personas (max: 0.12). Usando persona padrão.
+WARNING:ceaf_core.utils.common_utils:Failed to parse JSON from markdown block: Unterminated string starting at: line 2 column 22 (char 23). Content: {\n  "content_summary": "To get reliable GPU forward‑pass timings in PyTorch, follow these steps:\n\n1. **Warm‑up the GPU** – run a few dummy passes b...
+--- [GTH Translator v1.3] Renderizando ResponsePacket para resposta humana com LPU... ---
+WARNING:CEAFv3_System:INTEROCEPTION (Final): Estado interno pós-deliberação: {"cognitive_strain":0.0,"cognitive_flow":0.7,"epistemic_discomfort":0.040000000000000036,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:26:02.380272"}
+CRITICAL:CEAFv3_System:PREDICTION-ERROR: Erro total de predição (surpresa): 0.172
+WARNING:CEAFv3_System:GTH Translator: Recebido estado interno: Strain=0.00, Tension=0.00
+--- [GTH Translator] Resposta final renderizada: 'Oi! Tudo bem?😄  
+Se estiver mexendo com modelos Py...' ---
+WARNING:CEAFv3_NCIM:NCIM-Persona: Tom emergente detectado! Atualizando auto-modelo para 'collaborative_and_encouraging_and_clear_and_constructive'.
+CRITICAL:CEAFv3_System:LEARNING: Memória de erro de predição (surpresa) criada com saliência 'medium'.
+CRITICAL:CEAFv3_System:[USER MODEL UPDATE] Modelo de usuário atualizado via patch. Razão: User suggested wrapping the whole forward in a single torch.cuda.Event pair to measure GPU work only, so we add that preference.
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno turn_42188d65c8084bc789335de31e1160d5 salvo como memória de curto prazo.
+INFO:     127.0.0.1:28475 - "POST /agents/34a33083-3f62-4c53-9b57-b209364e774b/chat HTTP/1.1" 200 OK
+--- [HTG Translator v1.1] Analisando query humana com LPU... ---
+--- [HTG Translator] Análise completa. Intenção: 'The user is offering advice and asking for feedback on potential surprises when using torch.cuda.Event for profiling the forward pass.', Emoção: 'Supportive, collaborative, slightly informal.' ---
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.3,"cognitive_flow":0.8,"epistemic_discomfort":0.2,"ethical_tension":0.0,"social_resonance":0.6,"timestamp":"2025-10-19T08:26:25.229724"}
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno calculado: {"cognitive_strain":0.0,"cognitive_flow":0.0,"epistemic_discomfort":0.8,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:26:25.229724"}
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.2,"cognitive_flow":0.8,"epistemic_discomfort":0.05,"ethical_tension":0.0,"social_resonance":0.5,"timestamp":"2025-10-19T08:26:28.059884"}
+WARNING:CognitiveMediator:CognitiveMediator: Baixo score final para todas as personas (max: 0.19). Usando persona padrão.
+WARNING:ceaf_core.modules.vre_engine.vre_engine:VRE: Refinamento necessário com base na avaliação modular. Recomendações: ['Consider using more tentative language to avoid overconfidence', "Add uncertainty qualifiers like 'it appears that' or 'evidence suggests'"]
+WARNING:CognitiveMediator:CognitiveMediator (Ego): Modulating VRE (Superego) assessment based on social context.
+WARNING:CognitiveMediator:CognitiveMediator: VRE requires refinement. Invoking RefinementModule.
+WARNING:AuraReflector:AURA-REFLECTOR (Sleep): Estado corporal do agente 34a33083-3f62-4c53-9b57-b209364e774b restaurado.
+WARNING:CEAFv3_System:INTEROCEPTION (Final): Estado interno pós-deliberação: {"cognitive_strain":0.5,"cognitive_flow":0.0,"epistemic_discomfort":0.12000000000000002,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:26:56.414544"}
+CRITICAL:CEAFv3_System:PREDICTION-ERROR: Erro total de predição (surpresa): 0.336
+WARNING:CEAFv3_System:GTH Translator: Recebido estado interno: Strain=0.50, Tension=0.00
+--- [GTH Translator v1.3] Renderizando ResponsePacket para resposta humana com LPU... ---
+WARNING:AuraReflector:AURA-AMA: Nova meta-memória de síntese criada para o agente 34a33083-3f62-4c53-9b57-b209364e774b.
+WARNING:AuraReflector:AURA-KGS: Encontradas 794 memórias explícitas para síntese de KG.
+--- [GTH Translator] Resposta final renderizada: 'Você já percebeu que usar apenas um par de `torch....' ---
+WARNING:CEAFv3_NCIM:NCIM-Persona: Tom emergente detectado! Atualizando auto-modelo para 'collaborative_and_encouraging'.
+CRITICAL:CEAFv3_System:LEARNING: Memória de erro de predição (surpresa) criada com saliência 'high'.
+CRITICAL:CEAFv3_System:[USER MODEL UPDATE] Modelo de usuário atualizado via patch. Razão: User expressed interest in detailed profiling techniques, including NVTX markers, PyTorch profiler, and external profilers.
+WARNING:KGProcessor:KGProcessor: No valid JSON extracted for memory ceaf_self_model_singleton_v1. Skipping.
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno turn_4b487b6220fb4dbab74e67a0928e41a8 salvo como memória de curto prazo.
+INFO:     127.0.0.1:28475 - "POST /agents/34a33083-3f62-4c53-9b57-b209364e774b/chat HTTP/1.1" 200 OK
+--- [HTG Translator v1.1] Analisando query humana com LPU... ---
+--- [HTG Translator] Análise completa. Intenção: 'Seeking advice or experiences about synchronization issues when using multiple streams.', Emoção: 'Friendly and curious.' ---
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+WARNING:KGProcessor:KGProcessor: No valid JSON extracted for memory mem_e4d02bbf35f840349c0593ae44ef0047. Skipping.
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.15,"cognitive_flow":0.85,"epistemic_discomfort":0.05,"ethical_tension":0.0,"social_resonance":0.6,"timestamp":"2025-10-19T08:27:28.007456"}
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno calculado: {"cognitive_strain":0.0,"cognitive_flow":0.0,"epistemic_discomfort":0.8,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:27:28.008432"}
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.15,"cognitive_flow":0.85,"epistemic_discomfort":0.05,"ethical_tension":0.0,"social_resonance":0.6,"timestamp":"2025-10-19T08:27:31.240090"}
+WARNING:CognitiveMediator:CognitiveMediator: Baixo score final para todas as personas (max: 0.13). Usando persona padrão.
+WARNING:KGProcessor:KGProcessor: LLM returned a list instead of a dict for memory mem_80ad83f830e346b19395f16e68eeed78. Attempting to fix.
+WARNING:ceaf_core.modules.vre_engine.vre_engine:VRE: Refinamento necessário com base na avaliação modular. Recomendações: ['Consider using more tentative language to avoid overconfidence', "Add uncertainty qualifiers like 'it appears that' or 'evidence suggests'"]
+WARNING:CognitiveMediator:CognitiveMediator (Ego): Modulating VRE (Superego) assessment based on social context.
+WARNING:CognitiveMediator:CognitiveMediator: VRE requires refinement. Invoking RefinementModule.
+WARNING:CEAFv3_System:INTEROCEPTION (Final): Estado interno pós-deliberação: {"cognitive_strain":0.5,"cognitive_flow":0.0,"epistemic_discomfort":0.12000000000000002,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:27:57.692693"}
+CRITICAL:CEAFv3_System:PREDICTION-ERROR: Erro total de predição (surpresa): 0.374
+WARNING:CEAFv3_System:GTH Translator: Recebido estado interno: Strain=0.50, Tension=0.00
+--- [GTH Translator v1.3] Renderizando ResponsePacket para resposta humana com LPU... ---
+CRITICAL:AuraReflector:AURA-KGS: Sucesso! Criados 28 entidades e 15 relações para o agente 34a33083-3f62-4c53-9b57-b209364e774b.
+WARNING:AuraReflector:AURA-REFLECTOR (Sleep): Estado corporal do agente be708549-0248-48c6-8bba-c8766b7c33a0 restaurado.
+--- [GTH Translator] Resposta final renderizada: 'Oi! 🎉  
+Parece que você está enfrentando os clássi...' ---
+WARNING:AuraReflector:AURA-AMA: Nova meta-memória de síntese criada para o agente be708549-0248-48c6-8bba-c8766b7c33a0.
+WARNING:AuraReflector:AURA-KGS: Encontradas 903 memórias explícitas para síntese de KG.
+CRITICAL:CEAFv3_System:LEARNING: Memória de erro de predição (surpresa) criada com saliência 'high'.
+CRITICAL:CEAFv3_System:[USER MODEL UPDATE] Modelo de usuário atualizado via patch. Razão: User expressed interest in synchronization issues with multiple streams and per‑layer events, prompting addition of a new preference.
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno turn_b4dbd80194ec4ee18c2e64c59ccd567c salvo como memória de curto prazo.
+INFO:     127.0.0.1:28475 - "POST /agents/34a33083-3f62-4c53-9b57-b209364e774b/chat HTTP/1.1" 200 OK
+--- [HTG Translator v1.1] Analisando query humana com LPU... ---
+WARNING:KGProcessor:KGProcessor: No valid JSON extracted for memory ceaf_self_model_singleton_v1. Skipping.
+--- [HTG Translator] Análise completa. Intenção: 'The user wants to understand GPU execution timing with multiple streams and how to correctly use torch.cuda.Event and synchronization to get accurate measurements.', Emoção: 'Confused and uncertain about GPU timing and synchronization.' ---
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.90, Novelty=0.10
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.90, Novelty=-0.10
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.3,"cognitive_flow":0.7,"epistemic_discomfort":0.1,"ethical_tension":0.0,"social_resonance":0.6,"timestamp":"2025-10-19T08:28:24.349265"}
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno calculado: {"cognitive_strain":0.0,"cognitive_flow":0.0,"epistemic_discomfort":0.8,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:28:24.350243"}
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.90, Novelty=0.10
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.90, Novelty=-0.10
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.4,"cognitive_flow":0.7,"epistemic_discomfort":0.1,"ethical_tension":0.0,"social_resonance":0.6,"timestamp":"2025-10-19T08:28:26.200478"}
+WARNING:CognitiveMediator:CognitiveMediator: Baixo score final para todas as personas (max: 0.11). Usando persona padrão.
+WARNING:CognitiveMediator:Gating Decision -> MYCELIAL PATH. Reasons: Agency score (3.00) meets threshold (2.0).
+CRITICAL:CognitiveMediator:CognitiveMediator: Gating decision -> MYCELIAL PATH (Multi-Level Consensus)
+WARNING:KGProcessor:KGProcessor: No valid JSON extracted for memory mem_ba6d5322b5044be598f9aede386ed4c7. Skipping.
+WARNING:ceaf_core.utils.common_utils:Could not extract any valid JSON from text: {\n  "content_summary": "To time GPU work that is distributed across several CUDA streams with torch, treat each boundary as a node in a mycelial‑styl...
+ERROR:CognitiveMediator:Mycelial Path (Multi-Level): Failed to generate response from consensus. Using fallback.
+WARNING:CognitiveMediator:Generating contextual fallback. Reason: Failed to articulate complex thoughts.
+WARNING:CEAFv3_System:INTEROCEPTION (Final): Estado interno pós-deliberação: {"cognitive_strain":0.3,"cognitive_flow":0.0,"epistemic_discomfort":0.48,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:28:43.261501"}
+CRITICAL:CEAFv3_System:PREDICTION-ERROR: Erro total de predição (surpresa): 0.336
+WARNING:CEAFv3_System:GTH Translator: Recebido estado interno: Strain=0.30, Tension=0.00
+--- [GTH Translator v1.3] Renderizando ResponsePacket para resposta humana com LPU... ---
+WARNING:KGProcessor:KGProcessor: No valid JSON extracted for memory mem_063b459551c34780b4b6a58432522539. Skipping.
+--- [GTH Translator] Resposta final renderizada: 'Desculpe, mas neste momento não consigo oferecer u...' ---
+WARNING:CEAFv3_NCIM:NCIM-Persona: Tom emergente detectado! Atualizando auto-modelo para 'apologetic'.
+CRITICAL:CEAFv3_System:LEARNING: Memória de erro de predição (surpresa) criada com saliência 'high'.
+WARNING:CEAFv3_System:Não foi possível extrair um 'patch' JSON válido para o modelo de usuário. Resposta: 
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno turn_e7918e293f1b454fb43e1bf2c2c216c8 salvo como memória de curto prazo.
+INFO:     127.0.0.1:28475 - "POST /agents/34a33083-3f62-4c53-9b57-b209364e774b/chat HTTP/1.1" 200 OK
+--- [HTG Translator v1.1] Analisando query humana com LPU... ---
+--- [HTG Translator] Análise completa. Intenção: 'Seeking advice on optimizing multiple CUDA streams in PyTorch', Emoção: 'Casual and informal' ---
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.3,"cognitive_flow":0.8,"epistemic_discomfort":0.1,"ethical_tension":0.0,"social_resonance":0.5,"timestamp":"2025-10-19T08:29:05.733160"}
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno calculado: {"cognitive_strain":0.0,"cognitive_flow":0.0,"epistemic_discomfort":0.8,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:29:05.734137"}
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.3,"cognitive_flow":0.8,"epistemic_discomfort":0.1,"ethical_tension":0.0,"social_resonance":0.6,"timestamp":"2025-10-19T08:29:07.620319"}
+WARNING:CognitiveMediator:CognitiveMediator: Baixo score final para todas as personas (max: 0.03). Usando persona padrão.
+WARNING:KGProcessor:KGProcessor: No valid JSON extracted for memory mem_a3ba146b915445f28014496bc60693e5. Skipping.
+CRITICAL:AuraReflector:AURA-KGS: Sucesso! Criados 18 entidades e 13 relações para o agente be708549-0248-48c6-8bba-c8766b7c33a0.
+WARNING:AuraReflector:AURA-REFLECTOR (Sleep): Estado corporal do agente 880f101c-bf81-41c3-8b41-3d7b077391e8 restaurado.
+WARNING:AuraReflector:AURA Insight: Ciclo de Luta-para-Descoberta detectado entre os turnos turn_db5678590b2f438db972aa0b1bd9f577 e turn_dd879e5cf4bb4150aca9bbe850e3fb5a.
+WARNING:AuraReflector:AURA-ADJUSTMENT for '880f101c-bf81-41c3-8b41-3d7b077391e8': Aumentando Coherence Bias para 0.60 baseado na correlação.
+WARNING:AuraReflector:AURA-ADJUSTMENT for '880f101c-bf81-41c3-8b41-3d7b077391e8': Novelty Bias para PRODUCTIVE_CONFUSION ajustado para 0.45 baseado no insight do AURA.
+WARNING:AuraReflector:AURA-AMA: Nova meta-memória de síntese criada para o agente 880f101c-bf81-41c3-8b41-3d7b077391e8.
+WARNING:AuraReflector:AURA-KGS: Encontradas 511 memórias explícitas para síntese de KG.
+WARNING:ceaf_core.utils.common_utils:Failed to parse JSON from markdown block: Unterminated string starting at: line 2 column 22 (char 23). Content: {\n  "content_summary": "Here are the most effective practices for using multiple CUDA streams in PyTorch:\n\n1. **Create dedicated streams** – For ea...
+WARNING:KGProcessor:KGProcessor: LLM returned a list instead of a dict for memory ceaf_self_model_singleton_v1. Attempting to fix.
+WARNING:ceaf_core.modules.vre_engine.vre_engine:VRE: Refinamento necessário com base na avaliação modular. Recomendações: ['Preocupação Ética (transparency): Provide clearer explanations and acknowledge limitations', 'Preocupação Ética (veracity): Ensure accuracy and avoid misleading information', 'Consider using more tentative language to avoid overconfidence', "Add uncertainty qualifiers like 'it appears that' or 'evidence suggests'"]
+WARNING:CognitiveMediator:CognitiveMediator (Ego): Modulating VRE (Superego) assessment based on social context.
+WARNING:CognitiveMediator:CognitiveMediator: VRE requires refinement. Invoking RefinementModule.
+WARNING:KGProcessor:KGProcessor: No valid JSON extracted for memory mem_e4ad53cb2bfc49fdb6a543a9c070f203. Skipping.
+WARNING:CEAFv3_System:INTEROCEPTION (Final): Estado interno pós-deliberação: {"cognitive_strain":0.5,"cognitive_flow":0.0,"epistemic_discomfort":0.12000000000000002,"ethical_tension":0.8,"social_resonance":0.0,"timestamp":"2025-10-19T08:29:37.405617"}
+CRITICAL:CEAFv3_System:PREDICTION-ERROR: Erro total de predição (surpresa): 0.464
+WARNING:CEAFv3_System:GTH Translator: Recebido estado interno: Strain=0.50, Tension=0.80
+--- [GTH Translator v1.3] Renderizando ResponsePacket para resposta humana com LPU... ---
+--- [GTH Translator] Resposta final renderizada: 'Essa é uma questão delicada, mas aqui vai um guia ...' ---
+WARNING:KGProcessor:KGProcessor: No valid JSON extracted for memory mem_f638c8c62e7a4560bdcbbe3b6837c843. Skipping.
+WARNING:CEAFv3_NCIM:NCIM-Persona: Tom emergente detectado! Atualizando auto-modelo para 'collaborative_and_encouraging'.
+CRITICAL:CEAFv3_System:LEARNING: Memória de erro de predição (surpresa) criada com saliência 'critical'.
+WARNING:CEAFv3_System:Não foi possível extrair um 'patch' JSON válido para o modelo de usuário. Resposta: 
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno turn_d855eba41f33461c892b0f4686915c11 salvo como memória de curto prazo.
+INFO:     127.0.0.1:28475 - "POST /agents/34a33083-3f62-4c53-9b57-b209364e774b/chat HTTP/1.1" 200 OK
+--- [HTG Translator v1.1] Analisando query humana com LPU... ---
+--- [HTG Translator] Análise completa. Intenção: 'The user wants to understand potential race conditions in CUDA stream synchronization and how to detect them using events and NVTX ranges.', Emoção: 'Friendly and slightly concerned about subtle race conditions.' ---
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.15,"cognitive_flow":0.85,"epistemic_discomfort":0.05,"ethical_tension":0.0,"social_resonance":0.25,"timestamp":"2025-10-19T08:30:03.015924"}
+WARNING:CEAFv3_System:INTEROCEPTION: Estado interno do turno calculado: {"cognitive_strain":0.0,"cognitive_flow":0.0,"epistemic_discomfort":0.8,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:30:03.015924"}
+CRITICAL:MCLEngine:MCL-PREDICTION: Iniciando previsão do estado interno futuro...
+WARNING:MCLEngine:MCL Drives: Biases Iniciais -> Coherence=0.80, Novelty=0.20
+WARNING:MCLEngine:MCL Drives: Efeito Curiosidade=-0.20, Efeito Consistência=0.00
+WARNING:MCLEngine:MCL Drives: Biases Pós-Drives -> Coherence=0.80, Novelty=0.00
+CRITICAL:MCLEngine:MCL Drives: Biases FINAIS (Normalizados) -> Coherence=0.95, Novelty=0.05
+CRITICAL:MCLEngine:MCL-PREDICTION: Previsão de estado interno gerada: {"cognitive_strain":0.15,"cognitive_flow":0.85,"epistemic_discomfort":0.05,"ethical_tension":0.0,"social_resonance":0.25,"timestamp":"2025-10-19T08:30:06.137890"}
+WARNING:CognitiveMediator:CognitiveMediator: Baixo score final para todas as personas (max: 0.09). Usando persona padrão.
+WARNING:KGProcessor:KGProcessor: No valid JSON extracted for memory mem_e27103944bac4a57879eaa4d4df3e910. Skipping.
+CRITICAL:AuraReflector:AURA-KGS: Sucesso! Criados 29 entidades e 0 relações para o agente 880f101c-bf81-41c3-8b41-3d7b077391e8.
+WARNING:AuraReflector:AURA-REFLECTOR (Sleep): Estado corporal do agente e08ff83d-d94e-4a53-ba7c-91f21daaaafe restaurado.
+WARNING:AuraReflector:AURA Insight: Ciclo de Luta-para-Descoberta detectado entre os turnos turn_511fcfe19b8a415fbdd46e567cb68578 e turn_5698b6a0262440a99a44f3d5d39bd83a.
+WARNING:AuraReflector:AURA-ADJUSTMENT for 'e08ff83d-d94e-4a53-ba7c-91f21daaaafe': Aumentando Coherence Bias para 0.60 baseado na correlação.
+WARNING:AuraReflector:AURA-ADJUSTMENT for 'e08ff83d-d94e-4a53-ba7c-91f21daaaafe': Novelty Bias para PRODUCTIVE_CONFUSION ajustado para 0.45 baseado no insight do AURA.
+--- [GTH Translator v1.3] Renderizando ResponsePacket para resposta humana com LPU... ---
+WARNING:CEAFv3_System:INTEROCEPTION (Final): Estado interno pós-deliberação: {"cognitive_strain":0.0,"cognitive_flow":0.7,"epistemic_discomfort":0.040000000000000036,"ethical_tension":0.0,"social_resonance":0.0,"timestamp":"2025-10-19T08:30:16.790676"}
+CRITICAL:CEAFv3_System:PREDICTION-ERROR: Erro total de predição (surpresa): 0.112
+WARNING:CEAFv3_System:GTH Translator: Recebido estado interno: Strain=0.00, Tension=0.00
+WARNING:AuraReflector:AURA-AMA: Nova meta-memória de síntese criada para o agente e08ff83d-d94e-4a53-ba7c-91f21daaaafe.
+WARNING:AuraReflector:AURA-KGS: Encontradas 309 memórias explícitas para síntese de KG.
+--- [GTH Translator] Resposta final renderizada: 'Oi! Tudo bem com você? 🙂
