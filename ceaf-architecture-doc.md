@@ -2,7 +2,7 @@
 
 ## Overview
 
- This document details exactly which functions and modules in your code are responsible for each fascinating emergent behavior of CEAF, followed by a comprehensive list of the main functions in the CEAF architecture.
+ This document details exactly which functions and modules in your code are responsible for each  emergent behavior of CEAF, followed by a comprehensive list of the main functions in the CEAF architecture.
 
 ---
 
