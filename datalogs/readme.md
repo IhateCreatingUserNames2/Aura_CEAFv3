@@ -3,7 +3,6 @@
 
 **AuraCEAF V3** is a sophisticated cognitive architecture designed to serve as an external scaffolding for Large Language Models (LLMs), enabling the development of persistent, adaptive, and self-regulating AI agents. Instead of treating the LLM as a monolithic black box, AuraCEAF wraps it with a suite of Python modules that simulate an "internal world," forcing the model to operate according to principles of cognitive self-awareness, metacognition, and continuous identity evolution.
 
-This project is heavily inspired by the theoretical dynamics proposed in the **RC+ξ (Recursive Convergence under Epistemic Tension)** framework, translating its abstract concepts into a practical, observable, and controllable engineering solution.
 
 ## Core Philosophy: Simulating an Internal World
 
