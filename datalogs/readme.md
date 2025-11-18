@@ -1,6 +1,6 @@
 ### An Overview of the AuraCEAF Cognitive Architecture
 
-AuraCEAF (Cognitive Engine for Artificial Forms) is a sophisticated, modular cognitive architecture designed for creating advanced, stateful, and adaptive AI agents. Unlike traditional stateless chatbots, AuraCEAF V3 models an agent's internal cognitive processes, enabling it to learn, evolve, and interact with intention and consistency.
+AuraCEAF is a sophisticated, modular cognitive architecture designed for creating advanced, stateful, and adaptive AI agents. Unlike traditional stateless chatbots, AuraCEAF V3 models an agent's internal cognitive processes, enabling it to learn, evolve, and interact with intention and consistency.
 
 The architecture is built around a central library of components known as **`ceaf_core`**, which manages everything from memory and decision-making to ethics and motivation. The system operates on a cognitive cycle, processing user input through a series of specialized modules that communicate using an internal structured language.
 
